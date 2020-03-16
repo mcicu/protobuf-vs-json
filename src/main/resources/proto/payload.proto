@@ -1,0 +1,9 @@
+syntax = "proto3";
+package demo_namespace; // message namespace to avoid conflict with other messages
+option java_package = "com.mcicu.protobufvsjson.proto_pojos"; //future location of compiled java classes
+
+message Beacon {
+  string id = 1;
+  int32 latitude = 2;
+  int32 longitude = 3;
+}
