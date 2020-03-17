@@ -1,31 +1,27 @@
 package com.mcicu.protobufvsjson.controllers;
 
-import com.mcicu.protobufvsjson.json_pojos.Beacon;
-import com.mcicu.protobufvsjson.proto_pojos.Payload;
-import org.springframework.web.bind.annotation.*;
+import com.mcicu.protobufvsjson.proto_pojos.ProtoMessages;
+import com.mcicu.protobufvsjson.services.BeaconService;
+import lombok.AllArgsConstructor;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/protobuf")
+@AllArgsConstructor
 public class ProtobufRestController {
 
-    @GetMapping(path = "/beacon", produces = "application/x-protobuf")
-    public Payload.Beacon getBeacon() {
-        Payload.Beacon beacon = Payload.Beacon.newBuilder()
-                .setId("29if3i9i49f4i9")
-                .setLatitude(333)
-                .setLongitude(555)
-                .build();
+    private final BeaconService beaconService;
 
-        return beacon;
+    @GetMapping(path = "/beacons", produces = "application/x-protobuf")
+    public ProtoMessages.Beacons getBeacons() {
+        return beaconService.getBeacons();
     }
 
-    @PostMapping(path = "/add-beacon", consumes = "application/x-protobuf", produces = "application/json")
-    public Beacon readProtoBeacon(@RequestBody Payload.Beacon protoBeacon) {
-        Beacon beacon = new Beacon();
-        beacon.setId(protoBeacon.getId());
-        beacon.setLatitude(protoBeacon.getLatitude());
-        beacon.setLongitude(protoBeacon.getLongitude());
-
-        return beacon;
+    @GetMapping(path = "/beacons/{beaconId}", produces = "application/x-protobuf")
+    public ProtoMessages.Beacon getBeacon(@PathVariable("beaconId") String beaconId) {
+        return beaconService.getBeacon(beaconId);
     }
 }
