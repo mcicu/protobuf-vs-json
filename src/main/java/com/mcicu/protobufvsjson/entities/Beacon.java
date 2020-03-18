@@ -13,6 +13,6 @@ public class Beacon {
 
     @Id
     private String id;
-    private Double latitude;
-    private Double longitude;
+    private Float latitude;
+    private Float longitude;
 }
