@@ -26,4 +26,9 @@ public class BeaconService {
         return beacon.map(beaconMapper::toProtoMessage)
                 .orElse(ProtoMessages.Beacon.newBuilder().build());
     }
+
+    public String createBeacon(ProtoMessages.Beacon beaconMessage) {
+        Beacon beacon = beaconMapper.toEntity(beaconMessage);
+        return beaconRepository.save(beacon).getId();
+    }
 }
