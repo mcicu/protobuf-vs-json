@@ -8,10 +8,12 @@ The conclusions of this experiment, for the proposed payload structure, are the 
 Checkout [payload.proto schema](https://github.com/mcicu/protobuf-vs-json/blob/master/src/main/resources/proto/payload.proto) in order to be aware of the proposed schema for the data model.
 
 ###Requirements for current implementation
+
 NONE. You can run the tests or start the http service directly.
 
 
 ###Requirements for future development
+
 Download and install `protoc` compiler from https://github.com/protocolbuffers/protobuf/releases/tag/v3.11.4
 (be sure to match the `protobuf-java` library version from pom.xml).
 The `protoc` compiler will be used to compile the `.proto` files into java classes.
