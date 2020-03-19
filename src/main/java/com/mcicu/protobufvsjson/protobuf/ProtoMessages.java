@@ -14,55 +14,55 @@ public final class ProtoMessages {
     registerAllExtensions(
         (com.google.protobuf.ExtensionRegistryLite) registry);
   }
-  public interface BeaconsOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:demo_namespace.Beacons)
+  public interface BeaconMessagesOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.BeaconMessages)
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> 
-        getBeaconsList();
+    java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> 
+        getBeaconMessagesList();
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getBeacons(int index);
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getBeaconMessages(int index);
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    int getBeaconsCount();
+    int getBeaconMessagesCount();
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder> 
-        getBeaconsOrBuilderList();
+    java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder> 
+        getBeaconMessagesOrBuilderList();
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder getBeaconsOrBuilder(
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder getBeaconMessagesOrBuilder(
         int index);
   }
   /**
-   * Protobuf type {@code demo_namespace.Beacons}
+   * Protobuf type {@code demo_namespace.BeaconMessages}
    */
-  public  static final class Beacons extends
+  public  static final class BeaconMessages extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:demo_namespace.Beacons)
-      BeaconsOrBuilder {
+      // @@protoc_insertion_point(message_implements:demo_namespace.BeaconMessages)
+      BeaconMessagesOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Beacons.newBuilder() to construct.
-    private Beacons(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use BeaconMessages.newBuilder() to construct.
+    private BeaconMessages(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Beacons() {
-      beacons_ = java.util.Collections.emptyList();
+    private BeaconMessages() {
+      beaconMessages_ = java.util.Collections.emptyList();
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Beacons();
+      return new BeaconMessages();
     }
 
     @java.lang.Override
@@ -70,7 +70,7 @@ public final class ProtoMessages {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Beacons(
+    private BeaconMessages(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -91,11 +91,11 @@ public final class ProtoMessages {
               break;
             case 10: {
               if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-                beacons_ = new java.util.ArrayList<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon>();
+                beaconMessages_ = new java.util.ArrayList<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage>();
                 mutable_bitField0_ |= 0x00000001;
               }
-              beacons_.add(
-                  input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.parser(), extensionRegistry));
+              beaconMessages_.add(
+                  input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.parser(), extensionRegistry));
               break;
             }
             default: {
@@ -114,7 +114,7 @@ public final class ProtoMessages {
             e).setUnfinishedMessage(this);
       } finally {
         if (((mutable_bitField0_ & 0x00000001) != 0)) {
-          beacons_ = java.util.Collections.unmodifiableList(beacons_);
+          beaconMessages_ = java.util.Collections.unmodifiableList(beaconMessages_);
         }
         this.unknownFields = unknownFields.build();
         makeExtensionsImmutable();
@@ -122,50 +122,50 @@ public final class ProtoMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacons_descriptor;
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessages_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacons_fieldAccessorTable
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessages_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.Builder.class);
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.Builder.class);
     }
 
-    public static final int BEACONS_FIELD_NUMBER = 1;
-    private java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> beacons_;
+    public static final int BEACONMESSAGES_FIELD_NUMBER = 1;
+    private java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> beaconMessages_;
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> getBeaconsList() {
-      return beacons_;
+    public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> getBeaconMessagesList() {
+      return beaconMessages_;
     }
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    public java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder> 
-        getBeaconsOrBuilderList() {
-      return beacons_;
+    public java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder> 
+        getBeaconMessagesOrBuilderList() {
+      return beaconMessages_;
     }
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    public int getBeaconsCount() {
-      return beacons_.size();
+    public int getBeaconMessagesCount() {
+      return beaconMessages_.size();
     }
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getBeacons(int index) {
-      return beacons_.get(index);
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getBeaconMessages(int index) {
+      return beaconMessages_.get(index);
     }
     /**
-     * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+     * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
      */
-    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder getBeaconsOrBuilder(
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder getBeaconMessagesOrBuilder(
         int index) {
-      return beacons_.get(index);
+      return beaconMessages_.get(index);
     }
 
     private byte memoizedIsInitialized = -1;
@@ -182,8 +182,8 @@ public final class ProtoMessages {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      for (int i = 0; i < beacons_.size(); i++) {
-        output.writeMessage(1, beacons_.get(i));
+      for (int i = 0; i < beaconMessages_.size(); i++) {
+        output.writeMessage(1, beaconMessages_.get(i));
       }
       unknownFields.writeTo(output);
     }
@@ -194,9 +194,9 @@ public final class ProtoMessages {
       if (size != -1) return size;
 
       size = 0;
-      for (int i = 0; i < beacons_.size(); i++) {
+      for (int i = 0; i < beaconMessages_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, beacons_.get(i));
+          .computeMessageSize(1, beaconMessages_.get(i));
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -208,13 +208,13 @@ public final class ProtoMessages {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons)) {
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages)) {
         return super.equals(obj);
       }
-      com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons) obj;
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages) obj;
 
-      if (!getBeaconsList()
-          .equals(other.getBeaconsList())) return false;
+      if (!getBeaconMessagesList()
+          .equals(other.getBeaconMessagesList())) return false;
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -226,78 +226,78 @@ public final class ProtoMessages {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (getBeaconsCount() > 0) {
-        hash = (37 * hash) + BEACONS_FIELD_NUMBER;
-        hash = (53 * hash) + getBeaconsList().hashCode();
+      if (getBeaconMessagesCount() > 0) {
+        hash = (37 * hash) + BEACONMESSAGES_FIELD_NUMBER;
+        hash = (53 * hash) + getBeaconMessagesList().hashCode();
       }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(byte[] data)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(java.io.InputStream input)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseDelimitedFrom(java.io.InputStream input)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseDelimitedFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -310,7 +310,7 @@ public final class ProtoMessages {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons prototype) {
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -326,26 +326,26 @@ public final class ProtoMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code demo_namespace.Beacons}
+     * Protobuf type {@code demo_namespace.BeaconMessages}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:demo_namespace.Beacons)
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconsOrBuilder {
+        // @@protoc_insertion_point(builder_implements:demo_namespace.BeaconMessages)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessagesOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacons_descriptor;
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessages_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacons_fieldAccessorTable
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessages_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.Builder.class);
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.Builder.class);
       }
 
-      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.newBuilder()
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -358,17 +358,17 @@ public final class ProtoMessages {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getBeaconsFieldBuilder();
+          getBeaconMessagesFieldBuilder();
         }
       }
       @java.lang.Override
       public Builder clear() {
         super.clear();
-        if (beaconsBuilder_ == null) {
-          beacons_ = java.util.Collections.emptyList();
+        if (beaconMessagesBuilder_ == null) {
+          beaconMessages_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
         } else {
-          beaconsBuilder_.clear();
+          beaconMessagesBuilder_.clear();
         }
         return this;
       }
@@ -376,17 +376,17 @@ public final class ProtoMessages {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacons_descriptor;
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessages_descriptor;
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons getDefaultInstanceForType() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.getDefaultInstance();
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons build() {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons result = buildPartial();
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -394,17 +394,17 @@ public final class ProtoMessages {
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons buildPartial() {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons(this);
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages(this);
         int from_bitField0_ = bitField0_;
-        if (beaconsBuilder_ == null) {
+        if (beaconMessagesBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0)) {
-            beacons_ = java.util.Collections.unmodifiableList(beacons_);
+            beaconMessages_ = java.util.Collections.unmodifiableList(beaconMessages_);
             bitField0_ = (bitField0_ & ~0x00000001);
           }
-          result.beacons_ = beacons_;
+          result.beaconMessages_ = beaconMessages_;
         } else {
-          result.beacons_ = beaconsBuilder_.build();
+          result.beaconMessages_ = beaconMessagesBuilder_.build();
         }
         onBuilt();
         return result;
@@ -444,39 +444,39 @@ public final class ProtoMessages {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons) {
-          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons)other);
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons other) {
-        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons.getDefaultInstance()) return this;
-        if (beaconsBuilder_ == null) {
-          if (!other.beacons_.isEmpty()) {
-            if (beacons_.isEmpty()) {
-              beacons_ = other.beacons_;
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages.getDefaultInstance()) return this;
+        if (beaconMessagesBuilder_ == null) {
+          if (!other.beaconMessages_.isEmpty()) {
+            if (beaconMessages_.isEmpty()) {
+              beaconMessages_ = other.beaconMessages_;
               bitField0_ = (bitField0_ & ~0x00000001);
             } else {
-              ensureBeaconsIsMutable();
-              beacons_.addAll(other.beacons_);
+              ensureBeaconMessagesIsMutable();
+              beaconMessages_.addAll(other.beaconMessages_);
             }
             onChanged();
           }
         } else {
-          if (!other.beacons_.isEmpty()) {
-            if (beaconsBuilder_.isEmpty()) {
-              beaconsBuilder_.dispose();
-              beaconsBuilder_ = null;
-              beacons_ = other.beacons_;
+          if (!other.beaconMessages_.isEmpty()) {
+            if (beaconMessagesBuilder_.isEmpty()) {
+              beaconMessagesBuilder_.dispose();
+              beaconMessagesBuilder_ = null;
+              beaconMessages_ = other.beaconMessages_;
               bitField0_ = (bitField0_ & ~0x00000001);
-              beaconsBuilder_ = 
+              beaconMessagesBuilder_ = 
                 com.google.protobuf.GeneratedMessageV3.alwaysUseFieldBuilders ?
-                   getBeaconsFieldBuilder() : null;
+                   getBeaconMessagesFieldBuilder() : null;
             } else {
-              beaconsBuilder_.addAllMessages(other.beacons_);
+              beaconMessagesBuilder_.addAllMessages(other.beaconMessages_);
             }
           }
         }
@@ -495,11 +495,11 @@ public final class ProtoMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons parsedMessage = null;
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons) e.getUnfinishedMessage();
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -510,244 +510,244 @@ public final class ProtoMessages {
       }
       private int bitField0_;
 
-      private java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> beacons_ =
+      private java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> beaconMessages_ =
         java.util.Collections.emptyList();
-      private void ensureBeaconsIsMutable() {
+      private void ensureBeaconMessagesIsMutable() {
         if (!((bitField0_ & 0x00000001) != 0)) {
-          beacons_ = new java.util.ArrayList<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon>(beacons_);
+          beaconMessages_ = new java.util.ArrayList<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage>(beaconMessages_);
           bitField0_ |= 0x00000001;
          }
       }
 
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder> beaconsBuilder_;
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder> beaconMessagesBuilder_;
 
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> getBeaconsList() {
-        if (beaconsBuilder_ == null) {
-          return java.util.Collections.unmodifiableList(beacons_);
+      public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> getBeaconMessagesList() {
+        if (beaconMessagesBuilder_ == null) {
+          return java.util.Collections.unmodifiableList(beaconMessages_);
         } else {
-          return beaconsBuilder_.getMessageList();
+          return beaconMessagesBuilder_.getMessageList();
         }
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public int getBeaconsCount() {
-        if (beaconsBuilder_ == null) {
-          return beacons_.size();
+      public int getBeaconMessagesCount() {
+        if (beaconMessagesBuilder_ == null) {
+          return beaconMessages_.size();
         } else {
-          return beaconsBuilder_.getCount();
+          return beaconMessagesBuilder_.getCount();
         }
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getBeacons(int index) {
-        if (beaconsBuilder_ == null) {
-          return beacons_.get(index);
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getBeaconMessages(int index) {
+        if (beaconMessagesBuilder_ == null) {
+          return beaconMessages_.get(index);
         } else {
-          return beaconsBuilder_.getMessage(index);
+          return beaconMessagesBuilder_.getMessage(index);
         }
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder setBeacons(
-          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon value) {
-        if (beaconsBuilder_ == null) {
+      public Builder setBeaconMessages(
+          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage value) {
+        if (beaconMessagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBeaconsIsMutable();
-          beacons_.set(index, value);
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.set(index, value);
           onChanged();
         } else {
-          beaconsBuilder_.setMessage(index, value);
+          beaconMessagesBuilder_.setMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder setBeacons(
-          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder builderForValue) {
-        if (beaconsBuilder_ == null) {
-          ensureBeaconsIsMutable();
-          beacons_.set(index, builderForValue.build());
+      public Builder setBeaconMessages(
+          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder builderForValue) {
+        if (beaconMessagesBuilder_ == null) {
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.set(index, builderForValue.build());
           onChanged();
         } else {
-          beaconsBuilder_.setMessage(index, builderForValue.build());
+          beaconMessagesBuilder_.setMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder addBeacons(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon value) {
-        if (beaconsBuilder_ == null) {
+      public Builder addBeaconMessages(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage value) {
+        if (beaconMessagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBeaconsIsMutable();
-          beacons_.add(value);
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.add(value);
           onChanged();
         } else {
-          beaconsBuilder_.addMessage(value);
+          beaconMessagesBuilder_.addMessage(value);
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder addBeacons(
-          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon value) {
-        if (beaconsBuilder_ == null) {
+      public Builder addBeaconMessages(
+          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage value) {
+        if (beaconMessagesBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          ensureBeaconsIsMutable();
-          beacons_.add(index, value);
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.add(index, value);
           onChanged();
         } else {
-          beaconsBuilder_.addMessage(index, value);
+          beaconMessagesBuilder_.addMessage(index, value);
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder addBeacons(
-          com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder builderForValue) {
-        if (beaconsBuilder_ == null) {
-          ensureBeaconsIsMutable();
-          beacons_.add(builderForValue.build());
+      public Builder addBeaconMessages(
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder builderForValue) {
+        if (beaconMessagesBuilder_ == null) {
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.add(builderForValue.build());
           onChanged();
         } else {
-          beaconsBuilder_.addMessage(builderForValue.build());
+          beaconMessagesBuilder_.addMessage(builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder addBeacons(
-          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder builderForValue) {
-        if (beaconsBuilder_ == null) {
-          ensureBeaconsIsMutable();
-          beacons_.add(index, builderForValue.build());
+      public Builder addBeaconMessages(
+          int index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder builderForValue) {
+        if (beaconMessagesBuilder_ == null) {
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.add(index, builderForValue.build());
           onChanged();
         } else {
-          beaconsBuilder_.addMessage(index, builderForValue.build());
+          beaconMessagesBuilder_.addMessage(index, builderForValue.build());
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder addAllBeacons(
-          java.lang.Iterable<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon> values) {
-        if (beaconsBuilder_ == null) {
-          ensureBeaconsIsMutable();
+      public Builder addAllBeaconMessages(
+          java.lang.Iterable<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage> values) {
+        if (beaconMessagesBuilder_ == null) {
+          ensureBeaconMessagesIsMutable();
           com.google.protobuf.AbstractMessageLite.Builder.addAll(
-              values, beacons_);
+              values, beaconMessages_);
           onChanged();
         } else {
-          beaconsBuilder_.addAllMessages(values);
+          beaconMessagesBuilder_.addAllMessages(values);
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder clearBeacons() {
-        if (beaconsBuilder_ == null) {
-          beacons_ = java.util.Collections.emptyList();
+      public Builder clearBeaconMessages() {
+        if (beaconMessagesBuilder_ == null) {
+          beaconMessages_ = java.util.Collections.emptyList();
           bitField0_ = (bitField0_ & ~0x00000001);
           onChanged();
         } else {
-          beaconsBuilder_.clear();
+          beaconMessagesBuilder_.clear();
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public Builder removeBeacons(int index) {
-        if (beaconsBuilder_ == null) {
-          ensureBeaconsIsMutable();
-          beacons_.remove(index);
+      public Builder removeBeaconMessages(int index) {
+        if (beaconMessagesBuilder_ == null) {
+          ensureBeaconMessagesIsMutable();
+          beaconMessages_.remove(index);
           onChanged();
         } else {
-          beaconsBuilder_.remove(index);
+          beaconMessagesBuilder_.remove(index);
         }
         return this;
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder getBeaconsBuilder(
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder getBeaconMessagesBuilder(
           int index) {
-        return getBeaconsFieldBuilder().getBuilder(index);
+        return getBeaconMessagesFieldBuilder().getBuilder(index);
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder getBeaconsOrBuilder(
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder getBeaconMessagesOrBuilder(
           int index) {
-        if (beaconsBuilder_ == null) {
-          return beacons_.get(index);  } else {
-          return beaconsBuilder_.getMessageOrBuilder(index);
+        if (beaconMessagesBuilder_ == null) {
+          return beaconMessages_.get(index);  } else {
+          return beaconMessagesBuilder_.getMessageOrBuilder(index);
         }
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder> 
-           getBeaconsOrBuilderList() {
-        if (beaconsBuilder_ != null) {
-          return beaconsBuilder_.getMessageOrBuilderList();
+      public java.util.List<? extends com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder> 
+           getBeaconMessagesOrBuilderList() {
+        if (beaconMessagesBuilder_ != null) {
+          return beaconMessagesBuilder_.getMessageOrBuilderList();
         } else {
-          return java.util.Collections.unmodifiableList(beacons_);
+          return java.util.Collections.unmodifiableList(beaconMessages_);
         }
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder addBeaconsBuilder() {
-        return getBeaconsFieldBuilder().addBuilder(
-            com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.getDefaultInstance());
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder addBeaconMessagesBuilder() {
+        return getBeaconMessagesFieldBuilder().addBuilder(
+            com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.getDefaultInstance());
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder addBeaconsBuilder(
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder addBeaconMessagesBuilder(
           int index) {
-        return getBeaconsFieldBuilder().addBuilder(
-            index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.getDefaultInstance());
+        return getBeaconMessagesFieldBuilder().addBuilder(
+            index, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.getDefaultInstance());
       }
       /**
-       * <code>repeated .demo_namespace.Beacon beacons = 1;</code>
+       * <code>repeated .demo_namespace.BeaconMessage beaconMessages = 1;</code>
        */
-      public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder> 
-           getBeaconsBuilderList() {
-        return getBeaconsFieldBuilder().getBuilderList();
+      public java.util.List<com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder> 
+           getBeaconMessagesBuilderList() {
+        return getBeaconMessagesFieldBuilder().getBuilderList();
       }
       private com.google.protobuf.RepeatedFieldBuilderV3<
-          com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder> 
-          getBeaconsFieldBuilder() {
-        if (beaconsBuilder_ == null) {
-          beaconsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-              com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder>(
-                  beacons_,
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder> 
+          getBeaconMessagesFieldBuilder() {
+        if (beaconMessagesBuilder_ == null) {
+          beaconMessagesBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder>(
+                  beaconMessages_,
                   ((bitField0_ & 0x00000001) != 0),
                   getParentForChildren(),
                   isClean());
-          beacons_ = null;
+          beaconMessages_ = null;
         }
-        return beaconsBuilder_;
+        return beaconMessagesBuilder_;
       }
       @java.lang.Override
       public final Builder setUnknownFields(
@@ -762,48 +762,48 @@ public final class ProtoMessages {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:demo_namespace.Beacons)
+      // @@protoc_insertion_point(builder_scope:demo_namespace.BeaconMessages)
     }
 
-    // @@protoc_insertion_point(class_scope:demo_namespace.Beacons)
-    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:demo_namespace.BeaconMessages)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons();
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages();
     }
 
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons getDefaultInstance() {
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Beacons>
-        PARSER = new com.google.protobuf.AbstractParser<Beacons>() {
+    private static final com.google.protobuf.Parser<BeaconMessages>
+        PARSER = new com.google.protobuf.AbstractParser<BeaconMessages>() {
       @java.lang.Override
-      public Beacons parsePartialFrom(
+      public BeaconMessages parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Beacons(input, extensionRegistry);
+        return new BeaconMessages(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Beacons> parser() {
+    public static com.google.protobuf.Parser<BeaconMessages> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Beacons> getParserForType() {
+    public com.google.protobuf.Parser<BeaconMessages> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacons getDefaultInstanceForType() {
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessages getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
-  public interface BeaconOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:demo_namespace.Beacon)
+  public interface BeaconMessageOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.BeaconMessage)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -819,30 +819,78 @@ public final class ProtoMessages {
         getIdBytes();
 
     /**
-     * <code>float latitude = 2;</code>
-     * @return The latitude.
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     * @return Whether the userData field is set.
      */
-    float getLatitude();
+    boolean hasUserData();
+    /**
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     * @return The userData.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getUserData();
+    /**
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder getUserDataOrBuilder();
 
     /**
-     * <code>float longitude = 3;</code>
-     * @return The longitude.
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     * @return Whether the satelliteMetadata field is set.
      */
-    float getLongitude();
+    boolean hasSatelliteMetadata();
+    /**
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     * @return The satelliteMetadata.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getSatelliteMetadata();
+    /**
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder getSatelliteMetadataOrBuilder();
+
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     * @return Whether the grsMetadata field is set.
+     */
+    boolean hasGrsMetadata();
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     * @return The grsMetadata.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getGrsMetadata();
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder getGrsMetadataOrBuilder();
+
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     * @return Whether the mcsMetadata field is set.
+     */
+    boolean hasMcsMetadata();
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     * @return The mcsMetadata.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getMcsMetadata();
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder getMcsMetadataOrBuilder();
   }
   /**
-   * Protobuf type {@code demo_namespace.Beacon}
+   * Protobuf type {@code demo_namespace.BeaconMessage}
    */
-  public  static final class Beacon extends
+  public  static final class BeaconMessage extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:demo_namespace.Beacon)
-      BeaconOrBuilder {
+      // @@protoc_insertion_point(message_implements:demo_namespace.BeaconMessage)
+      BeaconMessageOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use Beacon.newBuilder() to construct.
-    private Beacon(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use BeaconMessage.newBuilder() to construct.
+    private BeaconMessage(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private Beacon() {
+    private BeaconMessage() {
       id_ = "";
     }
 
@@ -850,7 +898,7 @@ public final class ProtoMessages {
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new Beacon();
+      return new BeaconMessage();
     }
 
     @java.lang.Override
@@ -858,7 +906,7 @@ public final class ProtoMessages {
     getUnknownFields() {
       return this.unknownFields;
     }
-    private Beacon(
+    private BeaconMessage(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -882,14 +930,56 @@ public final class ProtoMessages {
               id_ = s;
               break;
             }
-            case 21: {
+            case 18: {
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder subBuilder = null;
+              if (userData_ != null) {
+                subBuilder = userData_.toBuilder();
+              }
+              userData_ = input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(userData_);
+                userData_ = subBuilder.buildPartial();
+              }
 
-              latitude_ = input.readFloat();
               break;
             }
-            case 29: {
+            case 26: {
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder subBuilder = null;
+              if (satelliteMetadata_ != null) {
+                subBuilder = satelliteMetadata_.toBuilder();
+              }
+              satelliteMetadata_ = input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(satelliteMetadata_);
+                satelliteMetadata_ = subBuilder.buildPartial();
+              }
 
-              longitude_ = input.readFloat();
+              break;
+            }
+            case 34: {
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder subBuilder = null;
+              if (grsMetadata_ != null) {
+                subBuilder = grsMetadata_.toBuilder();
+              }
+              grsMetadata_ = input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(grsMetadata_);
+                grsMetadata_ = subBuilder.buildPartial();
+              }
+
+              break;
+            }
+            case 42: {
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder subBuilder = null;
+              if (mcsMetadata_ != null) {
+                subBuilder = mcsMetadata_.toBuilder();
+              }
+              mcsMetadata_ = input.readMessage(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.parser(), extensionRegistry);
+              if (subBuilder != null) {
+                subBuilder.mergeFrom(mcsMetadata_);
+                mcsMetadata_ = subBuilder.buildPartial();
+              }
+
               break;
             }
             default: {
@@ -913,15 +1003,15 @@ public final class ProtoMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacon_descriptor;
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessage_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacon_fieldAccessorTable
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessage_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder.class);
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder.class);
     }
 
     public static final int ID_FIELD_NUMBER = 1;
@@ -960,24 +1050,96 @@ public final class ProtoMessages {
       }
     }
 
-    public static final int LATITUDE_FIELD_NUMBER = 2;
-    private float latitude_;
+    public static final int USER_DATA_FIELD_NUMBER = 2;
+    private com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData userData_;
     /**
-     * <code>float latitude = 2;</code>
-     * @return The latitude.
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     * @return Whether the userData field is set.
      */
-    public float getLatitude() {
-      return latitude_;
+    public boolean hasUserData() {
+      return userData_ != null;
+    }
+    /**
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     * @return The userData.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getUserData() {
+      return userData_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.getDefaultInstance() : userData_;
+    }
+    /**
+     * <code>.demo_namespace.UserData user_data = 2;</code>
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder getUserDataOrBuilder() {
+      return getUserData();
     }
 
-    public static final int LONGITUDE_FIELD_NUMBER = 3;
-    private float longitude_;
+    public static final int SATELLITE_METADATA_FIELD_NUMBER = 3;
+    private com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata satelliteMetadata_;
     /**
-     * <code>float longitude = 3;</code>
-     * @return The longitude.
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     * @return Whether the satelliteMetadata field is set.
      */
-    public float getLongitude() {
-      return longitude_;
+    public boolean hasSatelliteMetadata() {
+      return satelliteMetadata_ != null;
+    }
+    /**
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     * @return The satelliteMetadata.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getSatelliteMetadata() {
+      return satelliteMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDefaultInstance() : satelliteMetadata_;
+    }
+    /**
+     * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder getSatelliteMetadataOrBuilder() {
+      return getSatelliteMetadata();
+    }
+
+    public static final int GRS_METADATA_FIELD_NUMBER = 4;
+    private com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata grsMetadata_;
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     * @return Whether the grsMetadata field is set.
+     */
+    public boolean hasGrsMetadata() {
+      return grsMetadata_ != null;
+    }
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     * @return The grsMetadata.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getGrsMetadata() {
+      return grsMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.getDefaultInstance() : grsMetadata_;
+    }
+    /**
+     * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder getGrsMetadataOrBuilder() {
+      return getGrsMetadata();
+    }
+
+    public static final int MCSMETADATA_FIELD_NUMBER = 5;
+    private com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata mcsMetadata_;
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     * @return Whether the mcsMetadata field is set.
+     */
+    public boolean hasMcsMetadata() {
+      return mcsMetadata_ != null;
+    }
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     * @return The mcsMetadata.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getMcsMetadata() {
+      return mcsMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDefaultInstance() : mcsMetadata_;
+    }
+    /**
+     * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder getMcsMetadataOrBuilder() {
+      return getMcsMetadata();
     }
 
     private byte memoizedIsInitialized = -1;
@@ -997,11 +1159,17 @@ public final class ProtoMessages {
       if (!getIdBytes().isEmpty()) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
       }
-      if (latitude_ != 0F) {
-        output.writeFloat(2, latitude_);
+      if (userData_ != null) {
+        output.writeMessage(2, getUserData());
       }
-      if (longitude_ != 0F) {
-        output.writeFloat(3, longitude_);
+      if (satelliteMetadata_ != null) {
+        output.writeMessage(3, getSatelliteMetadata());
+      }
+      if (grsMetadata_ != null) {
+        output.writeMessage(4, getGrsMetadata());
+      }
+      if (mcsMetadata_ != null) {
+        output.writeMessage(5, getMcsMetadata());
       }
       unknownFields.writeTo(output);
     }
@@ -1015,13 +1183,21 @@ public final class ProtoMessages {
       if (!getIdBytes().isEmpty()) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
       }
-      if (latitude_ != 0F) {
+      if (userData_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(2, latitude_);
+          .computeMessageSize(2, getUserData());
       }
-      if (longitude_ != 0F) {
+      if (satelliteMetadata_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeFloatSize(3, longitude_);
+          .computeMessageSize(3, getSatelliteMetadata());
+      }
+      if (grsMetadata_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(4, getGrsMetadata());
+      }
+      if (mcsMetadata_ != null) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeMessageSize(5, getMcsMetadata());
       }
       size += unknownFields.getSerializedSize();
       memoizedSize = size;
@@ -1033,19 +1209,33 @@ public final class ProtoMessages {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon)) {
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage)) {
         return super.equals(obj);
       }
-      com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon) obj;
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage) obj;
 
       if (!getId()
           .equals(other.getId())) return false;
-      if (java.lang.Float.floatToIntBits(getLatitude())
-          != java.lang.Float.floatToIntBits(
-              other.getLatitude())) return false;
-      if (java.lang.Float.floatToIntBits(getLongitude())
-          != java.lang.Float.floatToIntBits(
-              other.getLongitude())) return false;
+      if (hasUserData() != other.hasUserData()) return false;
+      if (hasUserData()) {
+        if (!getUserData()
+            .equals(other.getUserData())) return false;
+      }
+      if (hasSatelliteMetadata() != other.hasSatelliteMetadata()) return false;
+      if (hasSatelliteMetadata()) {
+        if (!getSatelliteMetadata()
+            .equals(other.getSatelliteMetadata())) return false;
+      }
+      if (hasGrsMetadata() != other.hasGrsMetadata()) return false;
+      if (hasGrsMetadata()) {
+        if (!getGrsMetadata()
+            .equals(other.getGrsMetadata())) return false;
+      }
+      if (hasMcsMetadata() != other.hasMcsMetadata()) return false;
+      if (hasMcsMetadata()) {
+        if (!getMcsMetadata()
+            .equals(other.getMcsMetadata())) return false;
+      }
       if (!unknownFields.equals(other.unknownFields)) return false;
       return true;
     }
@@ -1059,80 +1249,90 @@ public final class ProtoMessages {
       hash = (19 * hash) + getDescriptor().hashCode();
       hash = (37 * hash) + ID_FIELD_NUMBER;
       hash = (53 * hash) + getId().hashCode();
-      hash = (37 * hash) + LATITUDE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getLatitude());
-      hash = (37 * hash) + LONGITUDE_FIELD_NUMBER;
-      hash = (53 * hash) + java.lang.Float.floatToIntBits(
-          getLongitude());
+      if (hasUserData()) {
+        hash = (37 * hash) + USER_DATA_FIELD_NUMBER;
+        hash = (53 * hash) + getUserData().hashCode();
+      }
+      if (hasSatelliteMetadata()) {
+        hash = (37 * hash) + SATELLITE_METADATA_FIELD_NUMBER;
+        hash = (53 * hash) + getSatelliteMetadata().hashCode();
+      }
+      if (hasGrsMetadata()) {
+        hash = (37 * hash) + GRS_METADATA_FIELD_NUMBER;
+        hash = (53 * hash) + getGrsMetadata().hashCode();
+      }
+      if (hasMcsMetadata()) {
+        hash = (37 * hash) + MCSMETADATA_FIELD_NUMBER;
+        hash = (53 * hash) + getMcsMetadata().hashCode();
+      }
       hash = (29 * hash) + unknownFields.hashCode();
       memoizedHashCode = hash;
       return hash;
     }
 
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(byte[] data)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(java.io.InputStream input)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseDelimitedFrom(java.io.InputStream input)
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseDelimitedFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parseFrom(
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -1145,7 +1345,7 @@ public final class ProtoMessages {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon prototype) {
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -1161,26 +1361,26 @@ public final class ProtoMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code demo_namespace.Beacon}
+     * Protobuf type {@code demo_namespace.BeaconMessage}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:demo_namespace.Beacon)
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconOrBuilder {
+        // @@protoc_insertion_point(builder_implements:demo_namespace.BeaconMessage)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessageOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacon_descriptor;
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessage_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacon_fieldAccessorTable
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessage_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.Builder.class);
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.Builder.class);
       }
 
-      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.newBuilder()
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -1200,27 +1400,47 @@ public final class ProtoMessages {
         super.clear();
         id_ = "";
 
-        latitude_ = 0F;
-
-        longitude_ = 0F;
-
+        if (userDataBuilder_ == null) {
+          userData_ = null;
+        } else {
+          userData_ = null;
+          userDataBuilder_ = null;
+        }
+        if (satelliteMetadataBuilder_ == null) {
+          satelliteMetadata_ = null;
+        } else {
+          satelliteMetadata_ = null;
+          satelliteMetadataBuilder_ = null;
+        }
+        if (grsMetadataBuilder_ == null) {
+          grsMetadata_ = null;
+        } else {
+          grsMetadata_ = null;
+          grsMetadataBuilder_ = null;
+        }
+        if (mcsMetadataBuilder_ == null) {
+          mcsMetadata_ = null;
+        } else {
+          mcsMetadata_ = null;
+          mcsMetadataBuilder_ = null;
+        }
         return this;
       }
 
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_Beacon_descriptor;
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_BeaconMessage_descriptor;
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getDefaultInstanceForType() {
-        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.getDefaultInstance();
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon build() {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon result = buildPartial();
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -1228,11 +1448,29 @@ public final class ProtoMessages {
       }
 
       @java.lang.Override
-      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon buildPartial() {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon(this);
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage(this);
         result.id_ = id_;
-        result.latitude_ = latitude_;
-        result.longitude_ = longitude_;
+        if (userDataBuilder_ == null) {
+          result.userData_ = userData_;
+        } else {
+          result.userData_ = userDataBuilder_.build();
+        }
+        if (satelliteMetadataBuilder_ == null) {
+          result.satelliteMetadata_ = satelliteMetadata_;
+        } else {
+          result.satelliteMetadata_ = satelliteMetadataBuilder_.build();
+        }
+        if (grsMetadataBuilder_ == null) {
+          result.grsMetadata_ = grsMetadata_;
+        } else {
+          result.grsMetadata_ = grsMetadataBuilder_.build();
+        }
+        if (mcsMetadataBuilder_ == null) {
+          result.mcsMetadata_ = mcsMetadata_;
+        } else {
+          result.mcsMetadata_ = mcsMetadataBuilder_.build();
+        }
         onBuilt();
         return result;
       }
@@ -1271,25 +1509,31 @@ public final class ProtoMessages {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon) {
-          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon)other);
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon other) {
-        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage.getDefaultInstance()) return this;
         if (!other.getId().isEmpty()) {
           id_ = other.id_;
           onChanged();
         }
-        if (other.getLatitude() != 0F) {
-          setLatitude(other.getLatitude());
+        if (other.hasUserData()) {
+          mergeUserData(other.getUserData());
         }
-        if (other.getLongitude() != 0F) {
-          setLongitude(other.getLongitude());
+        if (other.hasSatelliteMetadata()) {
+          mergeSatelliteMetadata(other.getSatelliteMetadata());
+        }
+        if (other.hasGrsMetadata()) {
+          mergeGrsMetadata(other.getGrsMetadata());
+        }
+        if (other.hasMcsMetadata()) {
+          mergeMcsMetadata(other.getMcsMetadata());
         }
         this.mergeUnknownFields(other.unknownFields);
         onChanged();
@@ -1306,11 +1550,11 @@ public final class ProtoMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon parsedMessage = null;
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon) e.getUnfinishedMessage();
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage) e.getUnfinishedMessage();
           throw e.unwrapIOException();
         } finally {
           if (parsedMessage != null) {
@@ -1396,62 +1640,1044 @@ public final class ProtoMessages {
         return this;
       }
 
-      private float latitude_ ;
+      private com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData userData_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder> userDataBuilder_;
       /**
-       * <code>float latitude = 2;</code>
-       * @return The latitude.
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       * @return Whether the userData field is set.
        */
-      public float getLatitude() {
-        return latitude_;
+      public boolean hasUserData() {
+        return userDataBuilder_ != null || userData_ != null;
       }
       /**
-       * <code>float latitude = 2;</code>
-       * @param value The latitude to set.
-       * @return This builder for chaining.
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       * @return The userData.
        */
-      public Builder setLatitude(float value) {
-        
-        latitude_ = value;
-        onChanged();
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getUserData() {
+        if (userDataBuilder_ == null) {
+          return userData_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.getDefaultInstance() : userData_;
+        } else {
+          return userDataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      public Builder setUserData(com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData value) {
+        if (userDataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          userData_ = value;
+          onChanged();
+        } else {
+          userDataBuilder_.setMessage(value);
+        }
+
         return this;
       }
       /**
-       * <code>float latitude = 2;</code>
-       * @return This builder for chaining.
+       * <code>.demo_namespace.UserData user_data = 2;</code>
        */
-      public Builder clearLatitude() {
+      public Builder setUserData(
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder builderForValue) {
+        if (userDataBuilder_ == null) {
+          userData_ = builderForValue.build();
+          onChanged();
+        } else {
+          userDataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      public Builder mergeUserData(com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData value) {
+        if (userDataBuilder_ == null) {
+          if (userData_ != null) {
+            userData_ =
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.newBuilder(userData_).mergeFrom(value).buildPartial();
+          } else {
+            userData_ = value;
+          }
+          onChanged();
+        } else {
+          userDataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      public Builder clearUserData() {
+        if (userDataBuilder_ == null) {
+          userData_ = null;
+          onChanged();
+        } else {
+          userData_ = null;
+          userDataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder getUserDataBuilder() {
         
-        latitude_ = 0F;
+        onChanged();
+        return getUserDataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder getUserDataOrBuilder() {
+        if (userDataBuilder_ != null) {
+          return userDataBuilder_.getMessageOrBuilder();
+        } else {
+          return userData_ == null ?
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.getDefaultInstance() : userData_;
+        }
+      }
+      /**
+       * <code>.demo_namespace.UserData user_data = 2;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder> 
+          getUserDataFieldBuilder() {
+        if (userDataBuilder_ == null) {
+          userDataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder>(
+                  getUserData(),
+                  getParentForChildren(),
+                  isClean());
+          userData_ = null;
+        }
+        return userDataBuilder_;
+      }
+
+      private com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata satelliteMetadata_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder> satelliteMetadataBuilder_;
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       * @return Whether the satelliteMetadata field is set.
+       */
+      public boolean hasSatelliteMetadata() {
+        return satelliteMetadataBuilder_ != null || satelliteMetadata_ != null;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       * @return The satelliteMetadata.
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getSatelliteMetadata() {
+        if (satelliteMetadataBuilder_ == null) {
+          return satelliteMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDefaultInstance() : satelliteMetadata_;
+        } else {
+          return satelliteMetadataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public Builder setSatelliteMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata value) {
+        if (satelliteMetadataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          satelliteMetadata_ = value;
+          onChanged();
+        } else {
+          satelliteMetadataBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public Builder setSatelliteMetadata(
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder builderForValue) {
+        if (satelliteMetadataBuilder_ == null) {
+          satelliteMetadata_ = builderForValue.build();
+          onChanged();
+        } else {
+          satelliteMetadataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public Builder mergeSatelliteMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata value) {
+        if (satelliteMetadataBuilder_ == null) {
+          if (satelliteMetadata_ != null) {
+            satelliteMetadata_ =
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.newBuilder(satelliteMetadata_).mergeFrom(value).buildPartial();
+          } else {
+            satelliteMetadata_ = value;
+          }
+          onChanged();
+        } else {
+          satelliteMetadataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public Builder clearSatelliteMetadata() {
+        if (satelliteMetadataBuilder_ == null) {
+          satelliteMetadata_ = null;
+          onChanged();
+        } else {
+          satelliteMetadata_ = null;
+          satelliteMetadataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder getSatelliteMetadataBuilder() {
+        
+        onChanged();
+        return getSatelliteMetadataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder getSatelliteMetadataOrBuilder() {
+        if (satelliteMetadataBuilder_ != null) {
+          return satelliteMetadataBuilder_.getMessageOrBuilder();
+        } else {
+          return satelliteMetadata_ == null ?
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDefaultInstance() : satelliteMetadata_;
+        }
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata satellite_metadata = 3;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder> 
+          getSatelliteMetadataFieldBuilder() {
+        if (satelliteMetadataBuilder_ == null) {
+          satelliteMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder>(
+                  getSatelliteMetadata(),
+                  getParentForChildren(),
+                  isClean());
+          satelliteMetadata_ = null;
+        }
+        return satelliteMetadataBuilder_;
+      }
+
+      private com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata grsMetadata_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder> grsMetadataBuilder_;
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       * @return Whether the grsMetadata field is set.
+       */
+      public boolean hasGrsMetadata() {
+        return grsMetadataBuilder_ != null || grsMetadata_ != null;
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       * @return The grsMetadata.
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getGrsMetadata() {
+        if (grsMetadataBuilder_ == null) {
+          return grsMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.getDefaultInstance() : grsMetadata_;
+        } else {
+          return grsMetadataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public Builder setGrsMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata value) {
+        if (grsMetadataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          grsMetadata_ = value;
+          onChanged();
+        } else {
+          grsMetadataBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public Builder setGrsMetadata(
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder builderForValue) {
+        if (grsMetadataBuilder_ == null) {
+          grsMetadata_ = builderForValue.build();
+          onChanged();
+        } else {
+          grsMetadataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public Builder mergeGrsMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata value) {
+        if (grsMetadataBuilder_ == null) {
+          if (grsMetadata_ != null) {
+            grsMetadata_ =
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.newBuilder(grsMetadata_).mergeFrom(value).buildPartial();
+          } else {
+            grsMetadata_ = value;
+          }
+          onChanged();
+        } else {
+          grsMetadataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public Builder clearGrsMetadata() {
+        if (grsMetadataBuilder_ == null) {
+          grsMetadata_ = null;
+          onChanged();
+        } else {
+          grsMetadata_ = null;
+          grsMetadataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder getGrsMetadataBuilder() {
+        
+        onChanged();
+        return getGrsMetadataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder getGrsMetadataOrBuilder() {
+        if (grsMetadataBuilder_ != null) {
+          return grsMetadataBuilder_.getMessageOrBuilder();
+        } else {
+          return grsMetadata_ == null ?
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.getDefaultInstance() : grsMetadata_;
+        }
+      }
+      /**
+       * <code>.demo_namespace.GRSMetadata grs_metadata = 4;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder> 
+          getGrsMetadataFieldBuilder() {
+        if (grsMetadataBuilder_ == null) {
+          grsMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder>(
+                  getGrsMetadata(),
+                  getParentForChildren(),
+                  isClean());
+          grsMetadata_ = null;
+        }
+        return grsMetadataBuilder_;
+      }
+
+      private com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata mcsMetadata_;
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder> mcsMetadataBuilder_;
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       * @return Whether the mcsMetadata field is set.
+       */
+      public boolean hasMcsMetadata() {
+        return mcsMetadataBuilder_ != null || mcsMetadata_ != null;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       * @return The mcsMetadata.
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getMcsMetadata() {
+        if (mcsMetadataBuilder_ == null) {
+          return mcsMetadata_ == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDefaultInstance() : mcsMetadata_;
+        } else {
+          return mcsMetadataBuilder_.getMessage();
+        }
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public Builder setMcsMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata value) {
+        if (mcsMetadataBuilder_ == null) {
+          if (value == null) {
+            throw new NullPointerException();
+          }
+          mcsMetadata_ = value;
+          onChanged();
+        } else {
+          mcsMetadataBuilder_.setMessage(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public Builder setMcsMetadata(
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder builderForValue) {
+        if (mcsMetadataBuilder_ == null) {
+          mcsMetadata_ = builderForValue.build();
+          onChanged();
+        } else {
+          mcsMetadataBuilder_.setMessage(builderForValue.build());
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public Builder mergeMcsMetadata(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata value) {
+        if (mcsMetadataBuilder_ == null) {
+          if (mcsMetadata_ != null) {
+            mcsMetadata_ =
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.newBuilder(mcsMetadata_).mergeFrom(value).buildPartial();
+          } else {
+            mcsMetadata_ = value;
+          }
+          onChanged();
+        } else {
+          mcsMetadataBuilder_.mergeFrom(value);
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public Builder clearMcsMetadata() {
+        if (mcsMetadataBuilder_ == null) {
+          mcsMetadata_ = null;
+          onChanged();
+        } else {
+          mcsMetadata_ = null;
+          mcsMetadataBuilder_ = null;
+        }
+
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder getMcsMetadataBuilder() {
+        
+        onChanged();
+        return getMcsMetadataFieldBuilder().getBuilder();
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder getMcsMetadataOrBuilder() {
+        if (mcsMetadataBuilder_ != null) {
+          return mcsMetadataBuilder_.getMessageOrBuilder();
+        } else {
+          return mcsMetadata_ == null ?
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDefaultInstance() : mcsMetadata_;
+        }
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata mcsMetadata = 5;</code>
+       */
+      private com.google.protobuf.SingleFieldBuilderV3<
+          com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder> 
+          getMcsMetadataFieldBuilder() {
+        if (mcsMetadataBuilder_ == null) {
+          mcsMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder>(
+                  getMcsMetadata(),
+                  getParentForChildren(),
+                  isClean());
+          mcsMetadata_ = null;
+        }
+        return mcsMetadataBuilder_;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:demo_namespace.BeaconMessage)
+    }
+
+    // @@protoc_insertion_point(class_scope:demo_namespace.BeaconMessage)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage();
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<BeaconMessage>
+        PARSER = new com.google.protobuf.AbstractParser<BeaconMessage>() {
+      @java.lang.Override
+      public BeaconMessage parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new BeaconMessage(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<BeaconMessage> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<BeaconMessage> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.BeaconMessage getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface UserDataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.UserData)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string random_user_data = 1;</code>
+     * @return The randomUserData.
+     */
+    java.lang.String getRandomUserData();
+    /**
+     * <code>string random_user_data = 1;</code>
+     * @return The bytes for randomUserData.
+     */
+    com.google.protobuf.ByteString
+        getRandomUserDataBytes();
+  }
+  /**
+   * Protobuf type {@code demo_namespace.UserData}
+   */
+  public  static final class UserData extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:demo_namespace.UserData)
+      UserDataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use UserData.newBuilder() to construct.
+    private UserData(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private UserData() {
+      randomUserData_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new UserData();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private UserData(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              randomUserData_ = s;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_UserData_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_UserData_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder.class);
+    }
+
+    public static final int RANDOM_USER_DATA_FIELD_NUMBER = 1;
+    private volatile java.lang.Object randomUserData_;
+    /**
+     * <code>string random_user_data = 1;</code>
+     * @return The randomUserData.
+     */
+    public java.lang.String getRandomUserData() {
+      java.lang.Object ref = randomUserData_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        randomUserData_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string random_user_data = 1;</code>
+     * @return The bytes for randomUserData.
+     */
+    public com.google.protobuf.ByteString
+        getRandomUserDataBytes() {
+      java.lang.Object ref = randomUserData_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        randomUserData_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getRandomUserDataBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, randomUserData_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getRandomUserDataBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, randomUserData_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData)) {
+        return super.equals(obj);
+      }
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData) obj;
+
+      if (!getRandomUserData()
+          .equals(other.getRandomUserData())) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + RANDOM_USER_DATA_FIELD_NUMBER;
+      hash = (53 * hash) + getRandomUserData().hashCode();
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code demo_namespace.UserData}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:demo_namespace.UserData)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserDataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_UserData_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_UserData_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.Builder.class);
+      }
+
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        randomUserData_ = "";
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_UserData_descriptor;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData(this);
+        result.randomUserData_ = randomUserData_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData.getDefaultInstance()) return this;
+        if (!other.getRandomUserData().isEmpty()) {
+          randomUserData_ = other.randomUserData_;
+          onChanged();
+        }
+        this.mergeUnknownFields(other.unknownFields);
         onChanged();
         return this;
       }
 
-      private float longitude_ ;
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object randomUserData_ = "";
       /**
-       * <code>float longitude = 3;</code>
-       * @return The longitude.
+       * <code>string random_user_data = 1;</code>
+       * @return The randomUserData.
        */
-      public float getLongitude() {
-        return longitude_;
+      public java.lang.String getRandomUserData() {
+        java.lang.Object ref = randomUserData_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          randomUserData_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
       }
       /**
-       * <code>float longitude = 3;</code>
-       * @param value The longitude to set.
+       * <code>string random_user_data = 1;</code>
+       * @return The bytes for randomUserData.
+       */
+      public com.google.protobuf.ByteString
+          getRandomUserDataBytes() {
+        java.lang.Object ref = randomUserData_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          randomUserData_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string random_user_data = 1;</code>
+       * @param value The randomUserData to set.
        * @return This builder for chaining.
        */
-      public Builder setLongitude(float value) {
-        
-        longitude_ = value;
+      public Builder setRandomUserData(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        randomUserData_ = value;
         onChanged();
         return this;
       }
       /**
-       * <code>float longitude = 3;</code>
+       * <code>string random_user_data = 1;</code>
        * @return This builder for chaining.
        */
-      public Builder clearLongitude() {
+      public Builder clearRandomUserData() {
         
-        longitude_ = 0F;
+        randomUserData_ = getDefaultInstance().getRandomUserData();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string random_user_data = 1;</code>
+       * @param value The bytes for randomUserData to set.
+       * @return This builder for chaining.
+       */
+      public Builder setRandomUserDataBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        randomUserData_ = value;
         onChanged();
         return this;
       }
@@ -1468,56 +2694,2677 @@ public final class ProtoMessages {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:demo_namespace.Beacon)
+      // @@protoc_insertion_point(builder_scope:demo_namespace.UserData)
     }
 
-    // @@protoc_insertion_point(class_scope:demo_namespace.Beacon)
-    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:demo_namespace.UserData)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon();
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData();
     }
 
-    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getDefaultInstance() {
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<Beacon>
-        PARSER = new com.google.protobuf.AbstractParser<Beacon>() {
+    private static final com.google.protobuf.Parser<UserData>
+        PARSER = new com.google.protobuf.AbstractParser<UserData>() {
       @java.lang.Override
-      public Beacon parsePartialFrom(
+      public UserData parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new Beacon(input, extensionRegistry);
+        return new UserData(input, extensionRegistry);
       }
     };
 
-    public static com.google.protobuf.Parser<Beacon> parser() {
+    public static com.google.protobuf.Parser<UserData> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<Beacon> getParserForType() {
+    public com.google.protobuf.Parser<UserData> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.Beacon getDefaultInstanceForType() {
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.UserData getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface SatelliteMetadataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.SatelliteMetadata)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string id = 1;</code>
+     * @return The id.
+     */
+    java.lang.String getId();
+    /**
+     * <code>string id = 1;</code>
+     * @return The bytes for id.
+     */
+    com.google.protobuf.ByteString
+        getIdBytes();
+
+    /**
+     * <code>float modulation = 2;</code>
+     * @return The modulation.
+     */
+    float getModulation();
+
+    /**
+     * <code>int32 block_number = 3;</code>
+     * @return The blockNumber.
+     */
+    int getBlockNumber();
+
+    /**
+     * <code>int64 toa_millis = 4;</code>
+     * @return The toaMillis.
+     */
+    long getToaMillis();
+
+    /**
+     * <code>float foa_mhz = 5;</code>
+     * @return The foaMhz.
+     */
+    float getFoaMhz();
+
+    /**
+     * <code>float reception_level = 6;</code>
+     * @return The receptionLevel.
+     */
+    float getReceptionLevel();
+
+    /**
+     * <code>float snr = 7;</code>
+     * @return The snr.
+     */
+    float getSnr();
+
+    /**
+     * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+     * @return The enum numeric value on the wire for qualityIndicator.
+     */
+    int getQualityIndicatorValue();
+    /**
+     * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+     * @return The qualityIndicator.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator getQualityIndicator();
+  }
+  /**
+   * Protobuf type {@code demo_namespace.SatelliteMetadata}
+   */
+  public  static final class SatelliteMetadata extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:demo_namespace.SatelliteMetadata)
+      SatelliteMetadataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use SatelliteMetadata.newBuilder() to construct.
+    private SatelliteMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private SatelliteMetadata() {
+      id_ = "";
+      qualityIndicator_ = 0;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new SatelliteMetadata();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private SatelliteMetadata(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              id_ = s;
+              break;
+            }
+            case 21: {
+
+              modulation_ = input.readFloat();
+              break;
+            }
+            case 24: {
+
+              blockNumber_ = input.readInt32();
+              break;
+            }
+            case 32: {
+
+              toaMillis_ = input.readInt64();
+              break;
+            }
+            case 45: {
+
+              foaMhz_ = input.readFloat();
+              break;
+            }
+            case 53: {
+
+              receptionLevel_ = input.readFloat();
+              break;
+            }
+            case 61: {
+
+              snr_ = input.readFloat();
+              break;
+            }
+            case 64: {
+              int rawValue = input.readEnum();
+
+              qualityIndicator_ = rawValue;
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_SatelliteMetadata_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_SatelliteMetadata_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder.class);
+    }
+
+    /**
+     * Protobuf enum {@code demo_namespace.SatelliteMetadata.QualityIndicator}
+     */
+    public enum QualityIndicator
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>LEVEL_1 = 0;</code>
+       */
+      LEVEL_1(0),
+      /**
+       * <code>LEVEL_2 = 1;</code>
+       */
+      LEVEL_2(1),
+      /**
+       * <code>LEVEL_3 = 2;</code>
+       */
+      LEVEL_3(2),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>LEVEL_1 = 0;</code>
+       */
+      public static final int LEVEL_1_VALUE = 0;
+      /**
+       * <code>LEVEL_2 = 1;</code>
+       */
+      public static final int LEVEL_2_VALUE = 1;
+      /**
+       * <code>LEVEL_3 = 2;</code>
+       */
+      public static final int LEVEL_3_VALUE = 2;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static QualityIndicator valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static QualityIndicator forNumber(int value) {
+        switch (value) {
+          case 0: return LEVEL_1;
+          case 1: return LEVEL_2;
+          case 2: return LEVEL_3;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<QualityIndicator>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          QualityIndicator> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<QualityIndicator>() {
+              public QualityIndicator findValueByNumber(int number) {
+                return QualityIndicator.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final QualityIndicator[] VALUES = values();
+
+      public static QualityIndicator valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private QualityIndicator(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:demo_namespace.SatelliteMetadata.QualityIndicator)
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object id_;
+    /**
+     * <code>string id = 1;</code>
+     * @return The id.
+     */
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        id_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string id = 1;</code>
+     * @return The bytes for id.
+     */
+    public com.google.protobuf.ByteString
+        getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int MODULATION_FIELD_NUMBER = 2;
+    private float modulation_;
+    /**
+     * <code>float modulation = 2;</code>
+     * @return The modulation.
+     */
+    public float getModulation() {
+      return modulation_;
+    }
+
+    public static final int BLOCK_NUMBER_FIELD_NUMBER = 3;
+    private int blockNumber_;
+    /**
+     * <code>int32 block_number = 3;</code>
+     * @return The blockNumber.
+     */
+    public int getBlockNumber() {
+      return blockNumber_;
+    }
+
+    public static final int TOA_MILLIS_FIELD_NUMBER = 4;
+    private long toaMillis_;
+    /**
+     * <code>int64 toa_millis = 4;</code>
+     * @return The toaMillis.
+     */
+    public long getToaMillis() {
+      return toaMillis_;
+    }
+
+    public static final int FOA_MHZ_FIELD_NUMBER = 5;
+    private float foaMhz_;
+    /**
+     * <code>float foa_mhz = 5;</code>
+     * @return The foaMhz.
+     */
+    public float getFoaMhz() {
+      return foaMhz_;
+    }
+
+    public static final int RECEPTION_LEVEL_FIELD_NUMBER = 6;
+    private float receptionLevel_;
+    /**
+     * <code>float reception_level = 6;</code>
+     * @return The receptionLevel.
+     */
+    public float getReceptionLevel() {
+      return receptionLevel_;
+    }
+
+    public static final int SNR_FIELD_NUMBER = 7;
+    private float snr_;
+    /**
+     * <code>float snr = 7;</code>
+     * @return The snr.
+     */
+    public float getSnr() {
+      return snr_;
+    }
+
+    public static final int QUALITY_INDICATOR_FIELD_NUMBER = 8;
+    private int qualityIndicator_;
+    /**
+     * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+     * @return The enum numeric value on the wire for qualityIndicator.
+     */
+    public int getQualityIndicatorValue() {
+      return qualityIndicator_;
+    }
+    /**
+     * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+     * @return The qualityIndicator.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator getQualityIndicator() {
+      @SuppressWarnings("deprecation")
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator result = com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.valueOf(qualityIndicator_);
+      return result == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.UNRECOGNIZED : result;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+      }
+      if (modulation_ != 0F) {
+        output.writeFloat(2, modulation_);
+      }
+      if (blockNumber_ != 0) {
+        output.writeInt32(3, blockNumber_);
+      }
+      if (toaMillis_ != 0L) {
+        output.writeInt64(4, toaMillis_);
+      }
+      if (foaMhz_ != 0F) {
+        output.writeFloat(5, foaMhz_);
+      }
+      if (receptionLevel_ != 0F) {
+        output.writeFloat(6, receptionLevel_);
+      }
+      if (snr_ != 0F) {
+        output.writeFloat(7, snr_);
+      }
+      if (qualityIndicator_ != com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.LEVEL_1.getNumber()) {
+        output.writeEnum(8, qualityIndicator_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+      }
+      if (modulation_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(2, modulation_);
+      }
+      if (blockNumber_ != 0) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(3, blockNumber_);
+      }
+      if (toaMillis_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(4, toaMillis_);
+      }
+      if (foaMhz_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(5, foaMhz_);
+      }
+      if (receptionLevel_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(6, receptionLevel_);
+      }
+      if (snr_ != 0F) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeFloatSize(7, snr_);
+      }
+      if (qualityIndicator_ != com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.LEVEL_1.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(8, qualityIndicator_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata)) {
+        return super.equals(obj);
+      }
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata) obj;
+
+      if (!getId()
+          .equals(other.getId())) return false;
+      if (java.lang.Float.floatToIntBits(getModulation())
+          != java.lang.Float.floatToIntBits(
+              other.getModulation())) return false;
+      if (getBlockNumber()
+          != other.getBlockNumber()) return false;
+      if (getToaMillis()
+          != other.getToaMillis()) return false;
+      if (java.lang.Float.floatToIntBits(getFoaMhz())
+          != java.lang.Float.floatToIntBits(
+              other.getFoaMhz())) return false;
+      if (java.lang.Float.floatToIntBits(getReceptionLevel())
+          != java.lang.Float.floatToIntBits(
+              other.getReceptionLevel())) return false;
+      if (java.lang.Float.floatToIntBits(getSnr())
+          != java.lang.Float.floatToIntBits(
+              other.getSnr())) return false;
+      if (qualityIndicator_ != other.qualityIndicator_) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId().hashCode();
+      hash = (37 * hash) + MODULATION_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getModulation());
+      hash = (37 * hash) + BLOCK_NUMBER_FIELD_NUMBER;
+      hash = (53 * hash) + getBlockNumber();
+      hash = (37 * hash) + TOA_MILLIS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getToaMillis());
+      hash = (37 * hash) + FOA_MHZ_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getFoaMhz());
+      hash = (37 * hash) + RECEPTION_LEVEL_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getReceptionLevel());
+      hash = (37 * hash) + SNR_FIELD_NUMBER;
+      hash = (53 * hash) + java.lang.Float.floatToIntBits(
+          getSnr());
+      hash = (37 * hash) + QUALITY_INDICATOR_FIELD_NUMBER;
+      hash = (53 * hash) + qualityIndicator_;
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code demo_namespace.SatelliteMetadata}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:demo_namespace.SatelliteMetadata)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_SatelliteMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_SatelliteMetadata_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.Builder.class);
+      }
+
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        id_ = "";
+
+        modulation_ = 0F;
+
+        blockNumber_ = 0;
+
+        toaMillis_ = 0L;
+
+        foaMhz_ = 0F;
+
+        receptionLevel_ = 0F;
+
+        snr_ = 0F;
+
+        qualityIndicator_ = 0;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_SatelliteMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata(this);
+        result.id_ = id_;
+        result.modulation_ = modulation_;
+        result.blockNumber_ = blockNumber_;
+        result.toaMillis_ = toaMillis_;
+        result.foaMhz_ = foaMhz_;
+        result.receptionLevel_ = receptionLevel_;
+        result.snr_ = snr_;
+        result.qualityIndicator_ = qualityIndicator_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.getDefaultInstance()) return this;
+        if (!other.getId().isEmpty()) {
+          id_ = other.id_;
+          onChanged();
+        }
+        if (other.getModulation() != 0F) {
+          setModulation(other.getModulation());
+        }
+        if (other.getBlockNumber() != 0) {
+          setBlockNumber(other.getBlockNumber());
+        }
+        if (other.getToaMillis() != 0L) {
+          setToaMillis(other.getToaMillis());
+        }
+        if (other.getFoaMhz() != 0F) {
+          setFoaMhz(other.getFoaMhz());
+        }
+        if (other.getReceptionLevel() != 0F) {
+          setReceptionLevel(other.getReceptionLevel());
+        }
+        if (other.getSnr() != 0F) {
+          setSnr(other.getSnr());
+        }
+        if (other.qualityIndicator_ != 0) {
+          setQualityIndicatorValue(other.getQualityIndicatorValue());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object id_ = "";
+      /**
+       * <code>string id = 1;</code>
+       * @return The id.
+       */
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @return The bytes for id.
+       */
+      public com.google.protobuf.ByteString
+          getIdBytes() {
+        java.lang.Object ref = id_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @param value The bytes for id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+
+      private float modulation_ ;
+      /**
+       * <code>float modulation = 2;</code>
+       * @return The modulation.
+       */
+      public float getModulation() {
+        return modulation_;
+      }
+      /**
+       * <code>float modulation = 2;</code>
+       * @param value The modulation to set.
+       * @return This builder for chaining.
+       */
+      public Builder setModulation(float value) {
+        
+        modulation_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float modulation = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearModulation() {
+        
+        modulation_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int blockNumber_ ;
+      /**
+       * <code>int32 block_number = 3;</code>
+       * @return The blockNumber.
+       */
+      public int getBlockNumber() {
+        return blockNumber_;
+      }
+      /**
+       * <code>int32 block_number = 3;</code>
+       * @param value The blockNumber to set.
+       * @return This builder for chaining.
+       */
+      public Builder setBlockNumber(int value) {
+        
+        blockNumber_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int32 block_number = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearBlockNumber() {
+        
+        blockNumber_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long toaMillis_ ;
+      /**
+       * <code>int64 toa_millis = 4;</code>
+       * @return The toaMillis.
+       */
+      public long getToaMillis() {
+        return toaMillis_;
+      }
+      /**
+       * <code>int64 toa_millis = 4;</code>
+       * @param value The toaMillis to set.
+       * @return This builder for chaining.
+       */
+      public Builder setToaMillis(long value) {
+        
+        toaMillis_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 toa_millis = 4;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearToaMillis() {
+        
+        toaMillis_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private float foaMhz_ ;
+      /**
+       * <code>float foa_mhz = 5;</code>
+       * @return The foaMhz.
+       */
+      public float getFoaMhz() {
+        return foaMhz_;
+      }
+      /**
+       * <code>float foa_mhz = 5;</code>
+       * @param value The foaMhz to set.
+       * @return This builder for chaining.
+       */
+      public Builder setFoaMhz(float value) {
+        
+        foaMhz_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float foa_mhz = 5;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearFoaMhz() {
+        
+        foaMhz_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float receptionLevel_ ;
+      /**
+       * <code>float reception_level = 6;</code>
+       * @return The receptionLevel.
+       */
+      public float getReceptionLevel() {
+        return receptionLevel_;
+      }
+      /**
+       * <code>float reception_level = 6;</code>
+       * @param value The receptionLevel to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReceptionLevel(float value) {
+        
+        receptionLevel_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float reception_level = 6;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReceptionLevel() {
+        
+        receptionLevel_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private float snr_ ;
+      /**
+       * <code>float snr = 7;</code>
+       * @return The snr.
+       */
+      public float getSnr() {
+        return snr_;
+      }
+      /**
+       * <code>float snr = 7;</code>
+       * @param value The snr to set.
+       * @return This builder for chaining.
+       */
+      public Builder setSnr(float value) {
+        
+        snr_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>float snr = 7;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearSnr() {
+        
+        snr_ = 0F;
+        onChanged();
+        return this;
+      }
+
+      private int qualityIndicator_ = 0;
+      /**
+       * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+       * @return The enum numeric value on the wire for qualityIndicator.
+       */
+      public int getQualityIndicatorValue() {
+        return qualityIndicator_;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+       * @param value The enum numeric value on the wire for qualityIndicator to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQualityIndicatorValue(int value) {
+        qualityIndicator_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+       * @return The qualityIndicator.
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator getQualityIndicator() {
+        @SuppressWarnings("deprecation")
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator result = com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.valueOf(qualityIndicator_);
+        return result == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+       * @param value The qualityIndicator to set.
+       * @return This builder for chaining.
+       */
+      public Builder setQualityIndicator(com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata.QualityIndicator value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        qualityIndicator_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.SatelliteMetadata.QualityIndicator quality_indicator = 8;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearQualityIndicator() {
+        
+        qualityIndicator_ = 0;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:demo_namespace.SatelliteMetadata)
+    }
+
+    // @@protoc_insertion_point(class_scope:demo_namespace.SatelliteMetadata)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata();
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<SatelliteMetadata>
+        PARSER = new com.google.protobuf.AbstractParser<SatelliteMetadata>() {
+      @java.lang.Override
+      public SatelliteMetadata parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new SatelliteMetadata(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<SatelliteMetadata> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<SatelliteMetadata> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.SatelliteMetadata getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface GRSMetadataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.GRSMetadata)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>string id = 1;</code>
+     * @return The id.
+     */
+    java.lang.String getId();
+    /**
+     * <code>string id = 1;</code>
+     * @return The bytes for id.
+     */
+    com.google.protobuf.ByteString
+        getIdBytes();
+
+    /**
+     * <code>int64 reception_date_millis = 2;</code>
+     * @return The receptionDateMillis.
+     */
+    long getReceptionDateMillis();
+  }
+  /**
+   * Protobuf type {@code demo_namespace.GRSMetadata}
+   */
+  public  static final class GRSMetadata extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:demo_namespace.GRSMetadata)
+      GRSMetadataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use GRSMetadata.newBuilder() to construct.
+    private GRSMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private GRSMetadata() {
+      id_ = "";
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new GRSMetadata();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private GRSMetadata(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 10: {
+              java.lang.String s = input.readStringRequireUtf8();
+
+              id_ = s;
+              break;
+            }
+            case 16: {
+
+              receptionDateMillis_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_GRSMetadata_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_GRSMetadata_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder.class);
+    }
+
+    public static final int ID_FIELD_NUMBER = 1;
+    private volatile java.lang.Object id_;
+    /**
+     * <code>string id = 1;</code>
+     * @return The id.
+     */
+    public java.lang.String getId() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        return (java.lang.String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        java.lang.String s = bs.toStringUtf8();
+        id_ = s;
+        return s;
+      }
+    }
+    /**
+     * <code>string id = 1;</code>
+     * @return The bytes for id.
+     */
+    public com.google.protobuf.ByteString
+        getIdBytes() {
+      java.lang.Object ref = id_;
+      if (ref instanceof java.lang.String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8(
+                (java.lang.String) ref);
+        id_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+
+    public static final int RECEPTION_DATE_MILLIS_FIELD_NUMBER = 2;
+    private long receptionDateMillis_;
+    /**
+     * <code>int64 reception_date_millis = 2;</code>
+     * @return The receptionDateMillis.
+     */
+    public long getReceptionDateMillis() {
+      return receptionDateMillis_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (!getIdBytes().isEmpty()) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 1, id_);
+      }
+      if (receptionDateMillis_ != 0L) {
+        output.writeInt64(2, receptionDateMillis_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (!getIdBytes().isEmpty()) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(1, id_);
+      }
+      if (receptionDateMillis_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, receptionDateMillis_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata)) {
+        return super.equals(obj);
+      }
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata) obj;
+
+      if (!getId()
+          .equals(other.getId())) return false;
+      if (getReceptionDateMillis()
+          != other.getReceptionDateMillis()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + ID_FIELD_NUMBER;
+      hash = (53 * hash) + getId().hashCode();
+      hash = (37 * hash) + RECEPTION_DATE_MILLIS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getReceptionDateMillis());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code demo_namespace.GRSMetadata}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:demo_namespace.GRSMetadata)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_GRSMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_GRSMetadata_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.Builder.class);
+      }
+
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        id_ = "";
+
+        receptionDateMillis_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_GRSMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata(this);
+        result.id_ = id_;
+        result.receptionDateMillis_ = receptionDateMillis_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata.getDefaultInstance()) return this;
+        if (!other.getId().isEmpty()) {
+          id_ = other.id_;
+          onChanged();
+        }
+        if (other.getReceptionDateMillis() != 0L) {
+          setReceptionDateMillis(other.getReceptionDateMillis());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private java.lang.Object id_ = "";
+      /**
+       * <code>string id = 1;</code>
+       * @return The id.
+       */
+      public java.lang.String getId() {
+        java.lang.Object ref = id_;
+        if (!(ref instanceof java.lang.String)) {
+          com.google.protobuf.ByteString bs =
+              (com.google.protobuf.ByteString) ref;
+          java.lang.String s = bs.toStringUtf8();
+          id_ = s;
+          return s;
+        } else {
+          return (java.lang.String) ref;
+        }
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @return The bytes for id.
+       */
+      public com.google.protobuf.ByteString
+          getIdBytes() {
+        java.lang.Object ref = id_;
+        if (ref instanceof String) {
+          com.google.protobuf.ByteString b = 
+              com.google.protobuf.ByteString.copyFromUtf8(
+                  (java.lang.String) ref);
+          id_ = b;
+          return b;
+        } else {
+          return (com.google.protobuf.ByteString) ref;
+        }
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @param value The id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setId(
+          java.lang.String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  
+        id_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearId() {
+        
+        id_ = getDefaultInstance().getId();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>string id = 1;</code>
+       * @param value The bytes for id to set.
+       * @return This builder for chaining.
+       */
+      public Builder setIdBytes(
+          com.google.protobuf.ByteString value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  checkByteStringIsUtf8(value);
+        
+        id_ = value;
+        onChanged();
+        return this;
+      }
+
+      private long receptionDateMillis_ ;
+      /**
+       * <code>int64 reception_date_millis = 2;</code>
+       * @return The receptionDateMillis.
+       */
+      public long getReceptionDateMillis() {
+        return receptionDateMillis_;
+      }
+      /**
+       * <code>int64 reception_date_millis = 2;</code>
+       * @param value The receptionDateMillis to set.
+       * @return This builder for chaining.
+       */
+      public Builder setReceptionDateMillis(long value) {
+        
+        receptionDateMillis_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 reception_date_millis = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearReceptionDateMillis() {
+        
+        receptionDateMillis_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:demo_namespace.GRSMetadata)
+    }
+
+    // @@protoc_insertion_point(class_scope:demo_namespace.GRSMetadata)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata();
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<GRSMetadata>
+        PARSER = new com.google.protobuf.AbstractParser<GRSMetadata>() {
+      @java.lang.Override
+      public GRSMetadata parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new GRSMetadata(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<GRSMetadata> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<GRSMetadata> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.GRSMetadata getDefaultInstanceForType() {
+      return DEFAULT_INSTANCE;
+    }
+
+  }
+
+  public interface MCSMetadataOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:demo_namespace.MCSMetadata)
+      com.google.protobuf.MessageOrBuilder {
+
+    /**
+     * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+     * @return The enum numeric value on the wire for mcsId.
+     */
+    int getMcsIdValue();
+    /**
+     * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+     * @return The mcsId.
+     */
+    com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId getMcsId();
+
+    /**
+     * <code>int64 time_of_arrival_at_mcs_millis = 2;</code>
+     * @return The timeOfArrivalAtMcsMillis.
+     */
+    long getTimeOfArrivalAtMcsMillis();
+
+    /**
+     * <code>int64 time_of_availability_at_sc_millis = 3;</code>
+     * @return The timeOfAvailabilityAtScMillis.
+     */
+    long getTimeOfAvailabilityAtScMillis();
+  }
+  /**
+   * Protobuf type {@code demo_namespace.MCSMetadata}
+   */
+  public  static final class MCSMetadata extends
+      com.google.protobuf.GeneratedMessageV3 implements
+      // @@protoc_insertion_point(message_implements:demo_namespace.MCSMetadata)
+      MCSMetadataOrBuilder {
+  private static final long serialVersionUID = 0L;
+    // Use MCSMetadata.newBuilder() to construct.
+    private MCSMetadata(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+      super(builder);
+    }
+    private MCSMetadata() {
+      mcsId_ = 0;
+    }
+
+    @java.lang.Override
+    @SuppressWarnings({"unused"})
+    protected java.lang.Object newInstance(
+        UnusedPrivateParameter unused) {
+      return new MCSMetadata();
+    }
+
+    @java.lang.Override
+    public final com.google.protobuf.UnknownFieldSet
+    getUnknownFields() {
+      return this.unknownFields;
+    }
+    private MCSMetadata(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      this();
+      if (extensionRegistry == null) {
+        throw new java.lang.NullPointerException();
+      }
+      com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder();
+      try {
+        boolean done = false;
+        while (!done) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              done = true;
+              break;
+            case 8: {
+              int rawValue = input.readEnum();
+
+              mcsId_ = rawValue;
+              break;
+            }
+            case 16: {
+
+              timeOfArrivalAtMcsMillis_ = input.readInt64();
+              break;
+            }
+            case 24: {
+
+              timeOfAvailabilityAtScMillis_ = input.readInt64();
+              break;
+            }
+            default: {
+              if (!parseUnknownField(
+                  input, unknownFields, extensionRegistry, tag)) {
+                done = true;
+              }
+              break;
+            }
+          }
+        }
+      } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+        throw e.setUnfinishedMessage(this);
+      } catch (java.io.IOException e) {
+        throw new com.google.protobuf.InvalidProtocolBufferException(
+            e).setUnfinishedMessage(this);
+      } finally {
+        this.unknownFields = unknownFields.build();
+        makeExtensionsImmutable();
+      }
+    }
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_MCSMetadata_descriptor;
+    }
+
+    @java.lang.Override
+    protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_MCSMetadata_fieldAccessorTable
+          .ensureFieldAccessorsInitialized(
+              com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder.class);
+    }
+
+    /**
+     * Protobuf enum {@code demo_namespace.MCSMetadata.MCSId}
+     */
+    public enum MCSId
+        implements com.google.protobuf.ProtocolMessageEnum {
+      /**
+       * <code>NOMINAL = 0;</code>
+       */
+      NOMINAL(0),
+      /**
+       * <code>BACKUP = 1;</code>
+       */
+      BACKUP(1),
+      UNRECOGNIZED(-1),
+      ;
+
+      /**
+       * <code>NOMINAL = 0;</code>
+       */
+      public static final int NOMINAL_VALUE = 0;
+      /**
+       * <code>BACKUP = 1;</code>
+       */
+      public static final int BACKUP_VALUE = 1;
+
+
+      public final int getNumber() {
+        if (this == UNRECOGNIZED) {
+          throw new java.lang.IllegalArgumentException(
+              "Can't get the number of an unknown enum value.");
+        }
+        return value;
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       * @deprecated Use {@link #forNumber(int)} instead.
+       */
+      @java.lang.Deprecated
+      public static MCSId valueOf(int value) {
+        return forNumber(value);
+      }
+
+      /**
+       * @param value The numeric wire value of the corresponding enum entry.
+       * @return The enum associated with the given numeric wire value.
+       */
+      public static MCSId forNumber(int value) {
+        switch (value) {
+          case 0: return NOMINAL;
+          case 1: return BACKUP;
+          default: return null;
+        }
+      }
+
+      public static com.google.protobuf.Internal.EnumLiteMap<MCSId>
+          internalGetValueMap() {
+        return internalValueMap;
+      }
+      private static final com.google.protobuf.Internal.EnumLiteMap<
+          MCSId> internalValueMap =
+            new com.google.protobuf.Internal.EnumLiteMap<MCSId>() {
+              public MCSId findValueByNumber(int number) {
+                return MCSId.forNumber(number);
+              }
+            };
+
+      public final com.google.protobuf.Descriptors.EnumValueDescriptor
+          getValueDescriptor() {
+        return getDescriptor().getValues().get(ordinal());
+      }
+      public final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptorForType() {
+        return getDescriptor();
+      }
+      public static final com.google.protobuf.Descriptors.EnumDescriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDescriptor().getEnumTypes().get(0);
+      }
+
+      private static final MCSId[] VALUES = values();
+
+      public static MCSId valueOf(
+          com.google.protobuf.Descriptors.EnumValueDescriptor desc) {
+        if (desc.getType() != getDescriptor()) {
+          throw new java.lang.IllegalArgumentException(
+            "EnumValueDescriptor is not for this type.");
+        }
+        if (desc.getIndex() == -1) {
+          return UNRECOGNIZED;
+        }
+        return VALUES[desc.getIndex()];
+      }
+
+      private final int value;
+
+      private MCSId(int value) {
+        this.value = value;
+      }
+
+      // @@protoc_insertion_point(enum_scope:demo_namespace.MCSMetadata.MCSId)
+    }
+
+    public static final int MCS_ID_FIELD_NUMBER = 1;
+    private int mcsId_;
+    /**
+     * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+     * @return The enum numeric value on the wire for mcsId.
+     */
+    public int getMcsIdValue() {
+      return mcsId_;
+    }
+    /**
+     * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+     * @return The mcsId.
+     */
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId getMcsId() {
+      @SuppressWarnings("deprecation")
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId result = com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.valueOf(mcsId_);
+      return result == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.UNRECOGNIZED : result;
+    }
+
+    public static final int TIME_OF_ARRIVAL_AT_MCS_MILLIS_FIELD_NUMBER = 2;
+    private long timeOfArrivalAtMcsMillis_;
+    /**
+     * <code>int64 time_of_arrival_at_mcs_millis = 2;</code>
+     * @return The timeOfArrivalAtMcsMillis.
+     */
+    public long getTimeOfArrivalAtMcsMillis() {
+      return timeOfArrivalAtMcsMillis_;
+    }
+
+    public static final int TIME_OF_AVAILABILITY_AT_SC_MILLIS_FIELD_NUMBER = 3;
+    private long timeOfAvailabilityAtScMillis_;
+    /**
+     * <code>int64 time_of_availability_at_sc_millis = 3;</code>
+     * @return The timeOfAvailabilityAtScMillis.
+     */
+    public long getTimeOfAvailabilityAtScMillis() {
+      return timeOfAvailabilityAtScMillis_;
+    }
+
+    private byte memoizedIsInitialized = -1;
+    @java.lang.Override
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized == 1) return true;
+      if (isInitialized == 0) return false;
+
+      memoizedIsInitialized = 1;
+      return true;
+    }
+
+    @java.lang.Override
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      if (mcsId_ != com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.NOMINAL.getNumber()) {
+        output.writeEnum(1, mcsId_);
+      }
+      if (timeOfArrivalAtMcsMillis_ != 0L) {
+        output.writeInt64(2, timeOfArrivalAtMcsMillis_);
+      }
+      if (timeOfAvailabilityAtScMillis_ != 0L) {
+        output.writeInt64(3, timeOfAvailabilityAtScMillis_);
+      }
+      unknownFields.writeTo(output);
+    }
+
+    @java.lang.Override
+    public int getSerializedSize() {
+      int size = memoizedSize;
+      if (size != -1) return size;
+
+      size = 0;
+      if (mcsId_ != com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.NOMINAL.getNumber()) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeEnumSize(1, mcsId_);
+      }
+      if (timeOfArrivalAtMcsMillis_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, timeOfArrivalAtMcsMillis_);
+      }
+      if (timeOfAvailabilityAtScMillis_ != 0L) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, timeOfAvailabilityAtScMillis_);
+      }
+      size += unknownFields.getSerializedSize();
+      memoizedSize = size;
+      return size;
+    }
+
+    @java.lang.Override
+    public boolean equals(final java.lang.Object obj) {
+      if (obj == this) {
+       return true;
+      }
+      if (!(obj instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata)) {
+        return super.equals(obj);
+      }
+      com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata other = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata) obj;
+
+      if (mcsId_ != other.mcsId_) return false;
+      if (getTimeOfArrivalAtMcsMillis()
+          != other.getTimeOfArrivalAtMcsMillis()) return false;
+      if (getTimeOfAvailabilityAtScMillis()
+          != other.getTimeOfAvailabilityAtScMillis()) return false;
+      if (!unknownFields.equals(other.unknownFields)) return false;
+      return true;
+    }
+
+    @java.lang.Override
+    public int hashCode() {
+      if (memoizedHashCode != 0) {
+        return memoizedHashCode;
+      }
+      int hash = 41;
+      hash = (19 * hash) + getDescriptor().hashCode();
+      hash = (37 * hash) + MCS_ID_FIELD_NUMBER;
+      hash = (53 * hash) + mcsId_;
+      hash = (37 * hash) + TIME_OF_ARRIVAL_AT_MCS_MILLIS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimeOfArrivalAtMcsMillis());
+      hash = (37 * hash) + TIME_OF_AVAILABILITY_AT_SC_MILLIS_FIELD_NUMBER;
+      hash = (53 * hash) + com.google.protobuf.Internal.hashLong(
+          getTimeOfAvailabilityAtScMillis());
+      hash = (29 * hash) + unknownFields.hashCode();
+      memoizedHashCode = hash;
+      return hash;
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        java.nio.ByteBuffer data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        java.nio.ByteBuffer data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return PARSER.parseFrom(data, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input);
+    }
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return com.google.protobuf.GeneratedMessageV3
+          .parseWithIOException(PARSER, input, extensionRegistry);
+    }
+
+    @java.lang.Override
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder() {
+      return DEFAULT_INSTANCE.toBuilder();
+    }
+    public static Builder newBuilder(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata prototype) {
+      return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
+    }
+    @java.lang.Override
+    public Builder toBuilder() {
+      return this == DEFAULT_INSTANCE
+          ? new Builder() : new Builder().mergeFrom(this);
+    }
+
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    /**
+     * Protobuf type {@code demo_namespace.MCSMetadata}
+     */
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
+        // @@protoc_insertion_point(builder_implements:demo_namespace.MCSMetadata)
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadataOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_MCSMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_MCSMetadata_fieldAccessorTable
+            .ensureFieldAccessorsInitialized(
+                com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.class, com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.Builder.class);
+      }
+
+      // Construct using com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+
+      private Builder(
+          com.google.protobuf.GeneratedMessageV3.BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessageV3
+                .alwaysUseFieldBuilders) {
+        }
+      }
+      @java.lang.Override
+      public Builder clear() {
+        super.clear();
+        mcsId_ = 0;
+
+        timeOfArrivalAtMcsMillis_ = 0L;
+
+        timeOfAvailabilityAtScMillis_ = 0L;
+
+        return this;
+      }
+
+      @java.lang.Override
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.internal_static_demo_namespace_MCSMetadata_descriptor;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getDefaultInstanceForType() {
+        return com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDefaultInstance();
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata build() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+
+      @java.lang.Override
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata buildPartial() {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata result = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata(this);
+        result.mcsId_ = mcsId_;
+        result.timeOfArrivalAtMcsMillis_ = timeOfArrivalAtMcsMillis_;
+        result.timeOfAvailabilityAtScMillis_ = timeOfAvailabilityAtScMillis_;
+        onBuilt();
+        return result;
+      }
+
+      @java.lang.Override
+      public Builder clone() {
+        return super.clone();
+      }
+      @java.lang.Override
+      public Builder setField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.setField(field, value);
+      }
+      @java.lang.Override
+      public Builder clearField(
+          com.google.protobuf.Descriptors.FieldDescriptor field) {
+        return super.clearField(field);
+      }
+      @java.lang.Override
+      public Builder clearOneof(
+          com.google.protobuf.Descriptors.OneofDescriptor oneof) {
+        return super.clearOneof(oneof);
+      }
+      @java.lang.Override
+      public Builder setRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          int index, java.lang.Object value) {
+        return super.setRepeatedField(field, index, value);
+      }
+      @java.lang.Override
+      public Builder addRepeatedField(
+          com.google.protobuf.Descriptors.FieldDescriptor field,
+          java.lang.Object value) {
+        return super.addRepeatedField(field, value);
+      }
+      @java.lang.Override
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata) {
+          return mergeFrom((com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+
+      public Builder mergeFrom(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata other) {
+        if (other == com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.getDefaultInstance()) return this;
+        if (other.mcsId_ != 0) {
+          setMcsIdValue(other.getMcsIdValue());
+        }
+        if (other.getTimeOfArrivalAtMcsMillis() != 0L) {
+          setTimeOfArrivalAtMcsMillis(other.getTimeOfArrivalAtMcsMillis());
+        }
+        if (other.getTimeOfAvailabilityAtScMillis() != 0L) {
+          setTimeOfAvailabilityAtScMillis(other.getTimeOfAvailabilityAtScMillis());
+        }
+        this.mergeUnknownFields(other.unknownFields);
+        onChanged();
+        return this;
+      }
+
+      @java.lang.Override
+      public final boolean isInitialized() {
+        return true;
+      }
+
+      @java.lang.Override
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata parsedMessage = null;
+        try {
+          parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
+        } catch (com.google.protobuf.InvalidProtocolBufferException e) {
+          parsedMessage = (com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata) e.getUnfinishedMessage();
+          throw e.unwrapIOException();
+        } finally {
+          if (parsedMessage != null) {
+            mergeFrom(parsedMessage);
+          }
+        }
+        return this;
+      }
+
+      private int mcsId_ = 0;
+      /**
+       * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+       * @return The enum numeric value on the wire for mcsId.
+       */
+      public int getMcsIdValue() {
+        return mcsId_;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+       * @param value The enum numeric value on the wire for mcsId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMcsIdValue(int value) {
+        mcsId_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+       * @return The mcsId.
+       */
+      public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId getMcsId() {
+        @SuppressWarnings("deprecation")
+        com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId result = com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.valueOf(mcsId_);
+        return result == null ? com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId.UNRECOGNIZED : result;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+       * @param value The mcsId to set.
+       * @return This builder for chaining.
+       */
+      public Builder setMcsId(com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata.MCSId value) {
+        if (value == null) {
+          throw new NullPointerException();
+        }
+        
+        mcsId_ = value.getNumber();
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>.demo_namespace.MCSMetadata.MCSId mcs_id = 1;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearMcsId() {
+        
+        mcsId_ = 0;
+        onChanged();
+        return this;
+      }
+
+      private long timeOfArrivalAtMcsMillis_ ;
+      /**
+       * <code>int64 time_of_arrival_at_mcs_millis = 2;</code>
+       * @return The timeOfArrivalAtMcsMillis.
+       */
+      public long getTimeOfArrivalAtMcsMillis() {
+        return timeOfArrivalAtMcsMillis_;
+      }
+      /**
+       * <code>int64 time_of_arrival_at_mcs_millis = 2;</code>
+       * @param value The timeOfArrivalAtMcsMillis to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTimeOfArrivalAtMcsMillis(long value) {
+        
+        timeOfArrivalAtMcsMillis_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 time_of_arrival_at_mcs_millis = 2;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTimeOfArrivalAtMcsMillis() {
+        
+        timeOfArrivalAtMcsMillis_ = 0L;
+        onChanged();
+        return this;
+      }
+
+      private long timeOfAvailabilityAtScMillis_ ;
+      /**
+       * <code>int64 time_of_availability_at_sc_millis = 3;</code>
+       * @return The timeOfAvailabilityAtScMillis.
+       */
+      public long getTimeOfAvailabilityAtScMillis() {
+        return timeOfAvailabilityAtScMillis_;
+      }
+      /**
+       * <code>int64 time_of_availability_at_sc_millis = 3;</code>
+       * @param value The timeOfAvailabilityAtScMillis to set.
+       * @return This builder for chaining.
+       */
+      public Builder setTimeOfAvailabilityAtScMillis(long value) {
+        
+        timeOfAvailabilityAtScMillis_ = value;
+        onChanged();
+        return this;
+      }
+      /**
+       * <code>int64 time_of_availability_at_sc_millis = 3;</code>
+       * @return This builder for chaining.
+       */
+      public Builder clearTimeOfAvailabilityAtScMillis() {
+        
+        timeOfAvailabilityAtScMillis_ = 0L;
+        onChanged();
+        return this;
+      }
+      @java.lang.Override
+      public final Builder setUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.setUnknownFields(unknownFields);
+      }
+
+      @java.lang.Override
+      public final Builder mergeUnknownFields(
+          final com.google.protobuf.UnknownFieldSet unknownFields) {
+        return super.mergeUnknownFields(unknownFields);
+      }
+
+
+      // @@protoc_insertion_point(builder_scope:demo_namespace.MCSMetadata)
+    }
+
+    // @@protoc_insertion_point(class_scope:demo_namespace.MCSMetadata)
+    private static final com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata DEFAULT_INSTANCE;
+    static {
+      DEFAULT_INSTANCE = new com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata();
+    }
+
+    public static com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getDefaultInstance() {
+      return DEFAULT_INSTANCE;
+    }
+
+    private static final com.google.protobuf.Parser<MCSMetadata>
+        PARSER = new com.google.protobuf.AbstractParser<MCSMetadata>() {
+      @java.lang.Override
+      public MCSMetadata parsePartialFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        return new MCSMetadata(input, extensionRegistry);
+      }
+    };
+
+    public static com.google.protobuf.Parser<MCSMetadata> parser() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.google.protobuf.Parser<MCSMetadata> getParserForType() {
+      return PARSER;
+    }
+
+    @java.lang.Override
+    public com.mcicu.protobufvsjson.protobuf.ProtoMessages.MCSMetadata getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
   }
 
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_demo_namespace_Beacons_descriptor;
+    internal_static_demo_namespace_BeaconMessages_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_demo_namespace_Beacons_fieldAccessorTable;
+      internal_static_demo_namespace_BeaconMessages_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_demo_namespace_Beacon_descriptor;
+    internal_static_demo_namespace_BeaconMessage_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_demo_namespace_Beacon_fieldAccessorTable;
+      internal_static_demo_namespace_BeaconMessage_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_demo_namespace_UserData_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_demo_namespace_UserData_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_demo_namespace_SatelliteMetadata_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_demo_namespace_SatelliteMetadata_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_demo_namespace_GRSMetadata_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_demo_namespace_GRSMetadata_fieldAccessorTable;
+  private static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_demo_namespace_MCSMetadata_descriptor;
+  private static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_demo_namespace_MCSMetadata_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -1528,28 +5375,71 @@ public final class ProtoMessages {
   static {
     java.lang.String[] descriptorData = {
       "\n\035resources/proto/payload.proto\022\016demo_na" +
-      "mespace\"2\n\007Beacons\022\'\n\007beacons\030\001 \003(\0132\026.de" +
-      "mo_namespace.Beacon\"9\n\006Beacon\022\n\n\002id\030\001 \001(" +
-      "\t\022\020\n\010latitude\030\002 \001(\002\022\021\n\tlongitude\030\003 \001(\002B2" +
-      "\n!com.mcicu.protobufvsjson.protobufB\rPro" +
-      "toMessagesb\006proto3"
+      "mespace\"G\n\016BeaconMessages\0225\n\016beaconMessa" +
+      "ges\030\001 \003(\0132\035.demo_namespace.BeaconMessage" +
+      "\"\354\001\n\rBeaconMessage\022\n\n\002id\030\001 \001(\t\022+\n\tuser_d" +
+      "ata\030\002 \001(\0132\030.demo_namespace.UserData\022=\n\022s" +
+      "atellite_metadata\030\003 \001(\0132!.demo_namespace" +
+      ".SatelliteMetadata\0221\n\014grs_metadata\030\004 \001(\013" +
+      "2\033.demo_namespace.GRSMetadata\0220\n\013mcsMeta" +
+      "data\030\005 \001(\0132\033.demo_namespace.MCSMetadata\"" +
+      "$\n\010UserData\022\030\n\020random_user_data\030\001 \001(\t\"\236\002" +
+      "\n\021SatelliteMetadata\022\n\n\002id\030\001 \001(\t\022\022\n\nmodul" +
+      "ation\030\002 \001(\002\022\024\n\014block_number\030\003 \001(\005\022\022\n\ntoa" +
+      "_millis\030\004 \001(\003\022\017\n\007foa_mhz\030\005 \001(\002\022\027\n\017recept" +
+      "ion_level\030\006 \001(\002\022\013\n\003snr\030\007 \001(\002\022M\n\021quality_" +
+      "indicator\030\010 \001(\01622.demo_namespace.Satelli" +
+      "teMetadata.QualityIndicator\"9\n\020QualityIn" +
+      "dicator\022\013\n\007LEVEL_1\020\000\022\013\n\007LEVEL_2\020\001\022\013\n\007LEV" +
+      "EL_3\020\002\"8\n\013GRSMetadata\022\n\n\002id\030\001 \001(\t\022\035\n\025rec" +
+      "eption_date_millis\030\002 \001(\003\"\264\001\n\013MCSMetadata" +
+      "\0221\n\006mcs_id\030\001 \001(\0162!.demo_namespace.MCSMet" +
+      "adata.MCSId\022%\n\035time_of_arrival_at_mcs_mi" +
+      "llis\030\002 \001(\003\022)\n!time_of_availability_at_sc" +
+      "_millis\030\003 \001(\003\" \n\005MCSId\022\013\n\007NOMINAL\020\000\022\n\n\006B" +
+      "ACKUP\020\001B4\n!com.mcicu.protobufvsjson.prot" +
+      "obufB\rProtoMessagesH\001b\006proto3"
     };
     descriptor = com.google.protobuf.Descriptors.FileDescriptor
       .internalBuildGeneratedFileFrom(descriptorData,
         new com.google.protobuf.Descriptors.FileDescriptor[] {
         });
-    internal_static_demo_namespace_Beacons_descriptor =
+    internal_static_demo_namespace_BeaconMessages_descriptor =
       getDescriptor().getMessageTypes().get(0);
-    internal_static_demo_namespace_Beacons_fieldAccessorTable = new
+    internal_static_demo_namespace_BeaconMessages_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_demo_namespace_Beacons_descriptor,
-        new java.lang.String[] { "Beacons", });
-    internal_static_demo_namespace_Beacon_descriptor =
+        internal_static_demo_namespace_BeaconMessages_descriptor,
+        new java.lang.String[] { "BeaconMessages", });
+    internal_static_demo_namespace_BeaconMessage_descriptor =
       getDescriptor().getMessageTypes().get(1);
-    internal_static_demo_namespace_Beacon_fieldAccessorTable = new
+    internal_static_demo_namespace_BeaconMessage_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_demo_namespace_Beacon_descriptor,
-        new java.lang.String[] { "Id", "Latitude", "Longitude", });
+        internal_static_demo_namespace_BeaconMessage_descriptor,
+        new java.lang.String[] { "Id", "UserData", "SatelliteMetadata", "GrsMetadata", "McsMetadata", });
+    internal_static_demo_namespace_UserData_descriptor =
+      getDescriptor().getMessageTypes().get(2);
+    internal_static_demo_namespace_UserData_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_demo_namespace_UserData_descriptor,
+        new java.lang.String[] { "RandomUserData", });
+    internal_static_demo_namespace_SatelliteMetadata_descriptor =
+      getDescriptor().getMessageTypes().get(3);
+    internal_static_demo_namespace_SatelliteMetadata_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_demo_namespace_SatelliteMetadata_descriptor,
+        new java.lang.String[] { "Id", "Modulation", "BlockNumber", "ToaMillis", "FoaMhz", "ReceptionLevel", "Snr", "QualityIndicator", });
+    internal_static_demo_namespace_GRSMetadata_descriptor =
+      getDescriptor().getMessageTypes().get(4);
+    internal_static_demo_namespace_GRSMetadata_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_demo_namespace_GRSMetadata_descriptor,
+        new java.lang.String[] { "Id", "ReceptionDateMillis", });
+    internal_static_demo_namespace_MCSMetadata_descriptor =
+      getDescriptor().getMessageTypes().get(5);
+    internal_static_demo_namespace_MCSMetadata_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_demo_namespace_MCSMetadata_descriptor,
+        new java.lang.String[] { "McsId", "TimeOfArrivalAtMcsMillis", "TimeOfAvailabilityAtScMillis", });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

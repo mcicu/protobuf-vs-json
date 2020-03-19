@@ -3,12 +3,53 @@ package demo_namespace; // message namespace to avoid conflict with other messag
 option java_package = "com.mcicu.protobufvsjson.protobuf"; //future location of compiled java classes
 option java_outer_classname = "ProtoMessages";
 
-message Beacons {
-    repeated Beacon beacons = 1;
+option optimize_for = SPEED; //default setting
+
+//import "google/protobuf/timestamp.proto";
+
+message BeaconMessages {
+    repeated BeaconMessage beaconMessages = 1;
 }
 
-message Beacon {
+message BeaconMessage {
     string id = 1;
-    float latitude = 2;
-    float longitude = 3;
+    UserData user_data = 2;
+    SatelliteMetadata satellite_metadata = 3;
+    GRSMetadata grs_metadata = 4;
+    MCSMetadata mcsMetadata = 5;
+}
+
+message UserData {
+    string random_user_data = 1;
+}
+
+message SatelliteMetadata {
+    string id = 1;
+    float modulation = 2;
+    int32 block_number = 3;
+    int64 toa_millis = 4;
+    float foa_mhz = 5;
+    float reception_level = 6;
+    float snr = 7;
+    enum QualityIndicator {
+        LEVEL_1 = 0;
+        LEVEL_2 = 1;
+        LEVEL_3 = 2;
+    }
+    QualityIndicator quality_indicator = 8;
+}
+
+message GRSMetadata {
+    string id = 1;
+    int64 reception_date_millis = 2;
+}
+
+message MCSMetadata {
+    enum MCSId {
+        NOMINAL = 0;
+        BACKUP = 1;
+    }
+    MCSId mcs_id = 1;
+    int64 time_of_arrival_at_mcs_millis = 2;
+    int64 time_of_availability_at_sc_millis = 3;
 }

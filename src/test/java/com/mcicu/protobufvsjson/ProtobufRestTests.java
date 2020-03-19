@@ -1,7 +1,6 @@
 package com.mcicu.protobufvsjson;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mcicu.protobufvsjson.json.dtos.*;
+import com.mcicu.protobufvsjson.protobuf.ProtoMessages;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,38 +9,42 @@ import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter;
 import org.springframework.web.client.RestTemplate;
 
 import javax.annotation.PostConstruct;
+import java.io.ByteArrayOutputStream;
 import java.text.MessageFormat;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.UUID;
 
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-public class JsonRestTests {
+class ProtobufRestTests {
 
     private Logger logger = LoggerFactory.getLogger(ProtobufRestTests.class);
 
-    private RestTemplate restTemplate = new RestTemplate();
+    private RestTemplate restTemplate = new RestTemplate(Arrays.asList(new ProtobufHttpMessageConverter(), new StringHttpMessageConverter()));
 
     @LocalServerPort
     private int port;
 
-    private List<BeaconMessageDTO> beaconMessages = new LinkedList<>();
+    private List<ProtoMessages.BeaconMessage> beaconMessages = new LinkedList<>();
 
     @PostConstruct
     private void generateBeaconMessages() {
         for (int i = 0; i < 10000; i++) {
-            BeaconMessageDTO beaconMessage = BeaconMessageDTO.Builder.aBeaconMessageDTO()
+            ProtoMessages.BeaconMessage beaconMessage = ProtoMessages.BeaconMessage.newBuilder()
                     .setId(UUID.randomUUID().toString())
                     .setUserData(
-                            UserDataDTO.Builder.anUserDataDTO()
+                            ProtoMessages.UserData.newBuilder()
                                     .setRandomUserData("eririjee0eierffgkfgj234349")
                                     .build())
                     .setSatelliteMetadata(
-                            SatelliteMetadataDTO.Builder.aSatelliteMetadataDTO()
+                            ProtoMessages.SatelliteMetadata.newBuilder()
                                     .setId(UUID.randomUUID().toString())
                                     .setModulation(333.3f)
                                     .setBlockNumber(55)
@@ -49,20 +52,20 @@ public class JsonRestTests {
                                     .setFoaMhz(555.5f)
                                     .setReceptionLevel(5f)
                                     .setSnr(44.4f)
-                                    .setQualityIndicator(SatelliteMetadataDTO.QualityIndicator.LEVEL_3)
+                                    .setQualityIndicator(ProtoMessages.SatelliteMetadata.QualityIndicator.LEVEL_3)
                                     .build()
                     )
                     .setGrsMetadata(
-                            GRSMetadataDTO.Builder.aGRSMetadataDTO()
+                            ProtoMessages.GRSMetadata.newBuilder()
                                     .setId(UUID.randomUUID().toString())
                                     .setReceptionDateMillis(456564564564L)
                                     .build()
                     )
                     .setMcsMetadata(
-                            MCSMetadataDTO.Builder.aMCSMetadataDTO()
-                                    .setMcsId(MCSMetadataDTO.MCSId.NOMINAL)
-                                    .setTimeOfArrivalAtMCSMillis(456564564564L)
-                                    .setTimeOfAvailabilityAtSCMillis(456564564564L)
+                            ProtoMessages.MCSMetadata.newBuilder()
+                                    .setMcsId(ProtoMessages.MCSMetadata.MCSId.NOMINAL)
+                                    .setTimeOfArrivalAtMcsMillis(456564564564L)
+                                    .setTimeOfAvailabilityAtScMillis(456564564564L)
                                     .build()
                     )
                     .build();
@@ -71,10 +74,10 @@ public class JsonRestTests {
     }
 
     @Test
-    public void sendAndAcknowledgeBeaconMessagesJSON() {
-        String url = MessageFormat.format("http://localhost:{0,number,#}/json/acknowledge-beacon-message", port);
+    public void sendAndAcknowledgeBeaconMessagesProtobuf() {
+        String url = MessageFormat.format("http://localhost:{0,number,#}/protobuf/acknowledge-beacon-message", port);
         int millis = 0;
-        for (BeaconMessageDTO beaconMessage : beaconMessages) {
+        for (ProtoMessages.BeaconMessage beaconMessage : beaconMessages) {
             long start = Instant.now().toEpochMilli();
             ResponseEntity<?> responseEntity = restTemplate.exchange(url, HttpMethod.POST, new HttpEntity<>(beaconMessage), String.class);
             long end = Instant.now().toEpochMilli();
@@ -87,12 +90,13 @@ public class JsonRestTests {
     }
 
     @Test
-    public void sizeBeaconMessageJSON() throws Throwable {
-        BeaconMessageDTO beaconMessage = beaconMessages.get(0);
+    public void sizeBeaconMessageProtobuf() throws Throwable {
+        ProtoMessages.BeaconMessage beaconMessage = beaconMessages.get(0);
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        beaconMessage.writeTo(outputStream);
+        outputStream.close();
 
-        ObjectMapper mapper = new ObjectMapper();
-
-        int byteCount = mapper.writeValueAsBytes(beaconMessage).length;
+        int byteCount = outputStream.toByteArray().length;
         logger.info("Beacon message size = {}", byteCount);
     }
 }

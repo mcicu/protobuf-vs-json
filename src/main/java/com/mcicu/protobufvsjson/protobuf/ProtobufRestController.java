@@ -1,36 +1,21 @@
 package com.mcicu.protobufvsjson.protobuf;
 
 import lombok.AllArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
-
-import java.net.URI;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping(path = "/protobuf")
 @AllArgsConstructor
 public class ProtobufRestController {
 
-    private final BeaconProtoService beaconProtoService;
+    private final BeaconMessageProtobufService beaconMessageProtobufService;
 
-    @GetMapping(path = "/beacons", produces = "application/x-protobuf")
-    public ProtoMessages.Beacons getBeacons() {
-        return beaconProtoService.getBeacons();
-    }
-
-    @GetMapping(path = "/beacons/{beaconId}", produces = "application/x-protobuf")
-    public ProtoMessages.Beacon getBeacon(@PathVariable("beaconId") String beaconId) {
-        return beaconProtoService.getBeacon(beaconId);
-    }
-
-    @PostMapping(path = "/beacons", consumes = "application/x-protobuf")
-    public ResponseEntity<?> createBeacon(@RequestBody ProtoMessages.Beacon beaconMessage) {
-        String resourceId = beaconProtoService.createBeacon(beaconMessage);
-        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
-                .pathSegment("{beaconId}")
-                .buildAndExpand(resourceId).toUri();
-
-        return ResponseEntity.created(location).build();
+    @PostMapping(path = "/acknowledge-beacon-message", consumes = "application/x-protobuf", produces = MediaType.TEXT_PLAIN_VALUE)
+    public String acknowledgeBeaconMessage(@RequestBody ProtoMessages.BeaconMessage beaconMessage) {
+        return beaconMessageProtobufService.acknowledgeBeaconMessage(beaconMessage);
     }
 }
