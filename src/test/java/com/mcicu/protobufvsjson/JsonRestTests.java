@@ -22,7 +22,7 @@ import java.util.UUID;
 @SpringBootTest(classes = Application.class, webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class JsonRestTests {
 
-    private Logger logger = LoggerFactory.getLogger(ProtobufRestTests.class);
+    private Logger logger = LoggerFactory.getLogger(JsonRestTests.class);
 
     private RestTemplate restTemplate = new RestTemplate();
 
